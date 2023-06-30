@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75AAF4AD2971CFFE00FDC626 /* WalletLibEthereum.docc in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4AC2971CFFE00FDC626 /* WalletLibEthereum.docc */; };
+		75AAF4B32971CFFF00FDC626 /* WalletLibEthereum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AAF4A82971CFFE00FDC626 /* WalletLibEthereum.framework */; };
+		75AAF4B92971CFFF00FDC626 /* WalletLibEthereum.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AAF4AB2971CFFE00FDC626 /* WalletLibEthereum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75AAF4F429756C7300FDC626 /* EthereumTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4F329756C7300FDC626 /* EthereumTransaction.swift */; };
+		75AAF4F629756D6000FDC626 /* TransactionErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4F529756D6000FDC626 /* TransactionErrors.swift */; };
+		75AAF4F829756DAA00FDC626 /* EthereumUnspentTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4F729756DAA00FDC626 /* EthereumUnspentTransaction.swift */; };
+		75AAF4FA29757F8900FDC626 /* EthereumAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4F929757F8900FDC626 /* EthereumAddress.swift */; };
+		75AAF4FC29757FB500FDC626 /* EthereumAddressError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4FB29757FB500FDC626 /* EthereumAddressError.swift */; };
+		75AAF4FF2975800800FDC626 /* EthereumAddressConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4FE2975800800FDC626 /* EthereumAddressConstants.swift */; };
+		75AAF5032975809800FDC626 /* AddressTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF5022975809800FDC626 /* AddressTest.swift */; };
+		75AAF505297580E500FDC626 /* AddressTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF504297580E500FDC626 /* AddressTestVector.swift */; };
+		75AAF5072975815300FDC626 /* TransactionTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF5062975815300FDC626 /* TransactionTestVector.swift */; };
+		75AAF5092975816500FDC626 /* TransactionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF5082975816500FDC626 /* TransactionTest.swift */; };
+		A4513260AB4DA14B1C4374D5 /* Pods_WalletLibEthereum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D40411E911FCB464C9E7798 /* Pods_WalletLibEthereum.framework */; };
+		CD271CA5E6E6940CD1DCC70C /* Pods_WalletLibEthereum_WalletLibEthereumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAFEF8CC981FDED49E58677 /* Pods_WalletLibEthereum_WalletLibEthereumTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75AAF4B42971CFFF00FDC626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75AAF49F2971CFFE00FDC626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75AAF4A72971CFFE00FDC626;
+			remoteInfo = WalletLibEthereum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34C635A4CAA6166874EEBB16 /* Pods-WalletLibEthereum-WalletLibEthereumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletLibEthereum-WalletLibEthereumTests.debug.xcconfig"; path = "Target Support Files/Pods-WalletLibEthereum-WalletLibEthereumTests/Pods-WalletLibEthereum-WalletLibEthereumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A47446EC7257C035FCE36D5 /* Pods-WalletLibEthereum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletLibEthereum.release.xcconfig"; path = "Target Support Files/Pods-WalletLibEthereum/Pods-WalletLibEthereum.release.xcconfig"; sourceTree = "<group>"; };
+		4D40411E911FCB464C9E7798 /* Pods_WalletLibEthereum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletLibEthereum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BAD0EBB18F4510F379FF1ED /* Pods-WalletLibEthereum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletLibEthereum.debug.xcconfig"; path = "Target Support Files/Pods-WalletLibEthereum/Pods-WalletLibEthereum.debug.xcconfig"; sourceTree = "<group>"; };
+		75AAF4A82971CFFE00FDC626 /* WalletLibEthereum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WalletLibEthereum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AAF4AB2971CFFE00FDC626 /* WalletLibEthereum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletLibEthereum.h; sourceTree = "<group>"; };
+		75AAF4AC2971CFFE00FDC626 /* WalletLibEthereum.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WalletLibEthereum.docc; sourceTree = "<group>"; };
+		75AAF4B22971CFFF00FDC626 /* WalletLibEthereumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletLibEthereumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AAF4F329756C7300FDC626 /* EthereumTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumTransaction.swift; sourceTree = "<group>"; };
+		75AAF4F529756D6000FDC626 /* TransactionErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionErrors.swift; sourceTree = "<group>"; };
+		75AAF4F729756DAA00FDC626 /* EthereumUnspentTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumUnspentTransaction.swift; sourceTree = "<group>"; };
+		75AAF4F929757F8900FDC626 /* EthereumAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddress.swift; sourceTree = "<group>"; };
+		75AAF4FB29757FB500FDC626 /* EthereumAddressError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddressError.swift; sourceTree = "<group>"; };
+		75AAF4FE2975800800FDC626 /* EthereumAddressConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddressConstants.swift; sourceTree = "<group>"; };
+		75AAF5022975809800FDC626 /* AddressTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTest.swift; sourceTree = "<group>"; };
+		75AAF504297580E500FDC626 /* AddressTestVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTestVector.swift; sourceTree = "<group>"; };
+		75AAF5062975815300FDC626 /* TransactionTestVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTestVector.swift; sourceTree = "<group>"; };
+		75AAF5082975816500FDC626 /* TransactionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTest.swift; sourceTree = "<group>"; };
+		AEAFEF8CC981FDED49E58677 /* Pods_WalletLibEthereum_WalletLibEthereumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletLibEthereum_WalletLibEthereumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB48D9F3D9A58782C9F068C /* Pods-WalletLibEthereum-WalletLibEthereumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletLibEthereum-WalletLibEthereumTests.release.xcconfig"; path = "Target Support Files/Pods-WalletLibEthereum-WalletLibEthereumTests/Pods-WalletLibEthereum-WalletLibEthereumTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75AAF4A52971CFFE00FDC626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4513260AB4DA14B1C4374D5 /* Pods_WalletLibEthereum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AAF4AF2971CFFF00FDC626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AAF4B32971CFFF00FDC626 /* WalletLibEthereum.framework in Frameworks */,
+				CD271CA5E6E6940CD1DCC70C /* Pods_WalletLibEthereum_WalletLibEthereumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BE06275BB994B9AFE586FBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D40411E911FCB464C9E7798 /* Pods_WalletLibEthereum.framework */,
+				AEAFEF8CC981FDED49E58677 /* Pods_WalletLibEthereum_WalletLibEthereumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75AAF49E2971CFFE00FDC626 = {
+			isa = PBXGroup;
+			children = (
+				75AAF4AA2971CFFE00FDC626 /* WalletLibEthereum */,
+				75AAF4B62971CFFF00FDC626 /* WalletLibEthereumTests */,
+				75AAF4A92971CFFE00FDC626 /* Products */,
+				87F80AD721E88FB86441787B /* Pods */,
+				2BE06275BB994B9AFE586FBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75AAF4A92971CFFE00FDC626 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75AAF4A82971CFFE00FDC626 /* WalletLibEthereum.framework */,
+				75AAF4B22971CFFF00FDC626 /* WalletLibEthereumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75AAF4AA2971CFFE00FDC626 /* WalletLibEthereum */ = {
+			isa = PBXGroup;
+			children = (
+				75AAF4FD29757FF400FDC626 /* Constants */,
+				75AAF4F229756C5B00FDC626 /* Transaction */,
+				75AAF4F129756C5400FDC626 /* Address */,
+				75AAF4AB2971CFFE00FDC626 /* WalletLibEthereum.h */,
+				75AAF4AC2971CFFE00FDC626 /* WalletLibEthereum.docc */,
+			);
+			path = WalletLibEthereum;
+			sourceTree = "<group>";
+		};
+		75AAF4B62971CFFF00FDC626 /* WalletLibEthereumTests */ = {
+			isa = PBXGroup;
+			children = (
+				75AAF5012975807F00FDC626 /* TransactionTest */,
+				75AAF5002975807700FDC626 /* AddressTest */,
+			);
+			path = WalletLibEthereumTests;
+			sourceTree = "<group>";
+		};
+		75AAF4F129756C5400FDC626 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				75AAF4F929757F8900FDC626 /* EthereumAddress.swift */,
+				75AAF4FB29757FB500FDC626 /* EthereumAddressError.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		75AAF4F229756C5B00FDC626 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				75AAF4F329756C7300FDC626 /* EthereumTransaction.swift */,
+				75AAF4F529756D6000FDC626 /* TransactionErrors.swift */,
+				75AAF4F729756DAA00FDC626 /* EthereumUnspentTransaction.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		75AAF4FD29757FF400FDC626 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				75AAF4FE2975800800FDC626 /* EthereumAddressConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		75AAF5002975807700FDC626 /* AddressTest */ = {
+			isa = PBXGroup;
+			children = (
+				75AAF5022975809800FDC626 /* AddressTest.swift */,
+				75AAF504297580E500FDC626 /* AddressTestVector.swift */,
+			);
+			path = AddressTest;
+			sourceTree = "<group>";
+		};
+		75AAF5012975807F00FDC626 /* TransactionTest */ = {
+			isa = PBXGroup;
+			children = (
+				75AAF5062975815300FDC626 /* TransactionTestVector.swift */,
+				75AAF5082975816500FDC626 /* TransactionTest.swift */,
+			);
+			path = TransactionTest;
+			sourceTree = "<group>";
+		};
+		87F80AD721E88FB86441787B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BAD0EBB18F4510F379FF1ED /* Pods-WalletLibEthereum.debug.xcconfig */,
+				3A47446EC7257C035FCE36D5 /* Pods-WalletLibEthereum.release.xcconfig */,
+				34C635A4CAA6166874EEBB16 /* Pods-WalletLibEthereum-WalletLibEthereumTests.debug.xcconfig */,
+				CBB48D9F3D9A58782C9F068C /* Pods-WalletLibEthereum-WalletLibEthereumTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		75AAF4A32971CFFE00FDC626 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AAF4B92971CFFF00FDC626 /* WalletLibEthereum.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		75AAF4A72971CFFE00FDC626 /* WalletLibEthereum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75AAF4BC2971CFFF00FDC626 /* Build configuration list for PBXNativeTarget "WalletLibEthereum" */;
+			buildPhases = (
+				91C6E3A3A4B7B7E8C6704A1A /* [CP] Check Pods Manifest.lock */,
+				75AAF4A32971CFFE00FDC626 /* Headers */,
+				75AAF4A42971CFFE00FDC626 /* Sources */,
+				75AAF4A52971CFFE00FDC626 /* Frameworks */,
+				75AAF4A62971CFFE00FDC626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalletLibEthereum;
+			productName = WalletLibEthereum;
+			productReference = 75AAF4A82971CFFE00FDC626 /* WalletLibEthereum.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		75AAF4B12971CFFF00FDC626 /* WalletLibEthereumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75AAF4BF2971CFFF00FDC626 /* Build configuration list for PBXNativeTarget "WalletLibEthereumTests" */;
+			buildPhases = (
+				6745A3BCF799C7774131E15F /* [CP] Check Pods Manifest.lock */,
+				75AAF4AE2971CFFF00FDC626 /* Sources */,
+				75AAF4AF2971CFFF00FDC626 /* Frameworks */,
+				75AAF4B02971CFFF00FDC626 /* Resources */,
+				5C60FDF6668EBB3DC2573A7B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75AAF4B52971CFFF00FDC626 /* PBXTargetDependency */,
+			);
+			name = WalletLibEthereumTests;
+			productName = WalletLibEthereumTests;
+			productReference = 75AAF4B22971CFFF00FDC626 /* WalletLibEthereumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75AAF49F2971CFFE00FDC626 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					75AAF4A72971CFFE00FDC626 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					75AAF4B12971CFFF00FDC626 = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = 75AAF4A22971CFFE00FDC626 /* Build configuration list for PBXProject "WalletLibEthereum" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75AAF49E2971CFFE00FDC626;
+			productRefGroup = 75AAF4A92971CFFE00FDC626 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75AAF4A72971CFFE00FDC626 /* WalletLibEthereum */,
+				75AAF4B12971CFFF00FDC626 /* WalletLibEthereumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75AAF4A62971CFFE00FDC626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AAF4B02971CFFF00FDC626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C60FDF6668EBB3DC2573A7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalletLibEthereum-WalletLibEthereumTests/Pods-WalletLibEthereum-WalletLibEthereumTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalletLibEthereum-WalletLibEthereumTests/Pods-WalletLibEthereum-WalletLibEthereumTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WalletLibEthereum-WalletLibEthereumTests/Pods-WalletLibEthereum-WalletLibEthereumTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6745A3BCF799C7774131E15F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalletLibEthereum-WalletLibEthereumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91C6E3A3A4B7B7E8C6704A1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalletLibEthereum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75AAF4A42971CFFE00FDC626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AAF4AD2971CFFE00FDC626 /* WalletLibEthereum.docc in Sources */,
+				75AAF4FF2975800800FDC626 /* EthereumAddressConstants.swift in Sources */,
+				75AAF4F629756D6000FDC626 /* TransactionErrors.swift in Sources */,
+				75AAF4FC29757FB500FDC626 /* EthereumAddressError.swift in Sources */,
+				75AAF4F829756DAA00FDC626 /* EthereumUnspentTransaction.swift in Sources */,
+				75AAF4F429756C7300FDC626 /* EthereumTransaction.swift in Sources */,
+				75AAF4FA29757F8900FDC626 /* EthereumAddress.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AAF4AE2971CFFF00FDC626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AAF5072975815300FDC626 /* TransactionTestVector.swift in Sources */,
+				75AAF5032975809800FDC626 /* AddressTest.swift in Sources */,
+				75AAF5092975816500FDC626 /* TransactionTest.swift in Sources */,
+				75AAF505297580E500FDC626 /* AddressTestVector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75AAF4B52971CFFF00FDC626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75AAF4A72971CFFE00FDC626 /* WalletLibEthereum */;
+			targetProxy = 75AAF4B42971CFFF00FDC626 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		75AAF4BA2971CFFF00FDC626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75AAF4BB2971CFFF00FDC626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75AAF4BD2971CFFF00FDC626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BAD0EBB18F4510F379FF1ED /* Pods-WalletLibEthereum.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wallet-lib-ethereum.WalletLibEthereum";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75AAF4BE2971CFFF00FDC626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A47446EC7257C035FCE36D5 /* Pods-WalletLibEthereum.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wallet-lib-ethereum.WalletLibEthereum";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75AAF4C02971CFFF00FDC626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34C635A4CAA6166874EEBB16 /* Pods-WalletLibEthereum-WalletLibEthereumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wallet-lib-ethereum.WalletLibEthereumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75AAF4C12971CFFF00FDC626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB48D9F3D9A58782C9F068C /* Pods-WalletLibEthereum-WalletLibEthereumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wallet-lib-ethereum.WalletLibEthereumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75AAF4A22971CFFE00FDC626 /* Build configuration list for PBXProject "WalletLibEthereum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AAF4BA2971CFFF00FDC626 /* Debug */,
+				75AAF4BB2971CFFF00FDC626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75AAF4BC2971CFFF00FDC626 /* Build configuration list for PBXNativeTarget "WalletLibEthereum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AAF4BD2971CFFF00FDC626 /* Debug */,
+				75AAF4BE2971CFFF00FDC626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75AAF4BF2971CFFF00FDC626 /* Build configuration list for PBXNativeTarget "WalletLibEthereumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AAF4C02971CFFF00FDC626 /* Debug */,
+				75AAF4C12971CFFF00FDC626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75AAF49F2971CFFE00FDC626 /* Project object */;
+}

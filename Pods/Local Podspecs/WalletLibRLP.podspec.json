@@ -1,0 +1,23 @@
+{
+  "name": "WalletLibRLP",
+  "version": "1.0",
+  "summary": "WalletLibRLP",
+  "homepage": "https://github.com/noonewallet/wallet-library-rlp-ios",
+  "license": "MIT",
+  "authors": "WalletLibRLP",
+  "source": {
+    "git": "https://github.com/noonewallet/wallet-library-rlp-ios.git",
+    "tag": "v1.0",
+    "submodules": true
+  },
+  "swift_versions": "5.0",
+  "source_files": [
+    "WalletLibRLP/*{swift}",
+    "WalletLibRLP/**/*{swift}"
+  ],
+  "platforms": {
+    "ios": "11.0",
+    "osx": "11.0"
+  },
+  "swift_version": "5.0"
+}

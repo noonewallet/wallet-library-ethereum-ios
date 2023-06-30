@@ -1,0 +1,6 @@
+[submodule "Submodule/WalletLibCrypto"]
+	path = Submodule/WalletLibCrypto
+	url = git@github.com:noonewallet/wallet-library-crypto-ios.git
+[submodule "Submodule/WalletLibRLP"]
+	path = Submodule/WalletLibRLP
+	url = git@github.com:noonewallet/wallet-library-rlp-ios.git

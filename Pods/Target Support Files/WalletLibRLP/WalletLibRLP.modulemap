@@ -1,0 +1,6 @@
+framework module WalletLibRLP {
+  umbrella header "WalletLibRLP-umbrella.h"
+
+  export *
+  module * { export * }
+}

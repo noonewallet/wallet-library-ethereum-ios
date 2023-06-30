@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-WalletLibEthereum-WalletLibEthereumTests/Pods-WalletLibEthereum-WalletLibEthereumTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/WalletLibCrypto/WalletLibCrypto.framework
+${BUILT_PRODUCTS_DIR}/WalletLibRLP/WalletLibRLP.framework
