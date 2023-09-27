@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75503BDE2AC4253A00AC6DBE /* EthereumSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75503BDD2AC4253A00AC6DBE /* EthereumSignature.swift */; };
+		75503BE02AC4258F00AC6DBE /* EthereumTransactionParametersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75503BDF2AC4258F00AC6DBE /* EthereumTransactionParametersProtocol.swift */; };
+		75503BE22AC4265F00AC6DBE /* EthereumTransactionLegacyParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75503BE12AC4265F00AC6DBE /* EthereumTransactionLegacyParameters.swift */; };
+		75503BE42AC4387600AC6DBE /* EthereumTransactionEIP1559Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75503BE32AC4387600AC6DBE /* EthereumTransactionEIP1559Parameters.swift */; };
 		75AAF4AD2971CFFE00FDC626 /* WalletLibEthereum.docc in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4AC2971CFFE00FDC626 /* WalletLibEthereum.docc */; };
 		75AAF4B32971CFFF00FDC626 /* WalletLibEthereum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AAF4A82971CFFE00FDC626 /* WalletLibEthereum.framework */; };
 		75AAF4B92971CFFF00FDC626 /* WalletLibEthereum.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AAF4AB2971CFFE00FDC626 /* WalletLibEthereum.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75AAF4F429756C7300FDC626 /* EthereumTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4F329756C7300FDC626 /* EthereumTransaction.swift */; };
 		75AAF4F629756D6000FDC626 /* TransactionErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4F529756D6000FDC626 /* TransactionErrors.swift */; };
-		75AAF4F829756DAA00FDC626 /* EthereumUnspentTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4F729756DAA00FDC626 /* EthereumUnspentTransaction.swift */; };
 		75AAF4FA29757F8900FDC626 /* EthereumAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4F929757F8900FDC626 /* EthereumAddress.swift */; };
 		75AAF4FC29757FB500FDC626 /* EthereumAddressError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4FB29757FB500FDC626 /* EthereumAddressError.swift */; };
 		75AAF4FF2975800800FDC626 /* EthereumAddressConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF4FE2975800800FDC626 /* EthereumAddressConstants.swift */; };
@@ -39,13 +42,16 @@
 		3A47446EC7257C035FCE36D5 /* Pods-WalletLibEthereum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletLibEthereum.release.xcconfig"; path = "Target Support Files/Pods-WalletLibEthereum/Pods-WalletLibEthereum.release.xcconfig"; sourceTree = "<group>"; };
 		4D40411E911FCB464C9E7798 /* Pods_WalletLibEthereum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletLibEthereum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAD0EBB18F4510F379FF1ED /* Pods-WalletLibEthereum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletLibEthereum.debug.xcconfig"; path = "Target Support Files/Pods-WalletLibEthereum/Pods-WalletLibEthereum.debug.xcconfig"; sourceTree = "<group>"; };
+		75503BDD2AC4253A00AC6DBE /* EthereumSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumSignature.swift; sourceTree = "<group>"; };
+		75503BDF2AC4258F00AC6DBE /* EthereumTransactionParametersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumTransactionParametersProtocol.swift; sourceTree = "<group>"; };
+		75503BE12AC4265F00AC6DBE /* EthereumTransactionLegacyParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumTransactionLegacyParameters.swift; sourceTree = "<group>"; };
+		75503BE32AC4387600AC6DBE /* EthereumTransactionEIP1559Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumTransactionEIP1559Parameters.swift; sourceTree = "<group>"; };
 		75AAF4A82971CFFE00FDC626 /* WalletLibEthereum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WalletLibEthereum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AAF4AB2971CFFE00FDC626 /* WalletLibEthereum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletLibEthereum.h; sourceTree = "<group>"; };
 		75AAF4AC2971CFFE00FDC626 /* WalletLibEthereum.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WalletLibEthereum.docc; sourceTree = "<group>"; };
 		75AAF4B22971CFFF00FDC626 /* WalletLibEthereumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletLibEthereumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AAF4F329756C7300FDC626 /* EthereumTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumTransaction.swift; sourceTree = "<group>"; };
 		75AAF4F529756D6000FDC626 /* TransactionErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionErrors.swift; sourceTree = "<group>"; };
-		75AAF4F729756DAA00FDC626 /* EthereumUnspentTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumUnspentTransaction.swift; sourceTree = "<group>"; };
 		75AAF4F929757F8900FDC626 /* EthereumAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddress.swift; sourceTree = "<group>"; };
 		75AAF4FB29757FB500FDC626 /* EthereumAddressError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddressError.swift; sourceTree = "<group>"; };
 		75AAF4FE2975800800FDC626 /* EthereumAddressConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddressConstants.swift; sourceTree = "<group>"; };
@@ -142,7 +148,10 @@
 			children = (
 				75AAF4F329756C7300FDC626 /* EthereumTransaction.swift */,
 				75AAF4F529756D6000FDC626 /* TransactionErrors.swift */,
-				75AAF4F729756DAA00FDC626 /* EthereumUnspentTransaction.swift */,
+				75503BDD2AC4253A00AC6DBE /* EthereumSignature.swift */,
+				75503BDF2AC4258F00AC6DBE /* EthereumTransactionParametersProtocol.swift */,
+				75503BE12AC4265F00AC6DBE /* EthereumTransactionLegacyParameters.swift */,
+				75503BE32AC4387600AC6DBE /* EthereumTransactionEIP1559Parameters.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -364,10 +373,13 @@
 				75AAF4AD2971CFFE00FDC626 /* WalletLibEthereum.docc in Sources */,
 				75AAF4FF2975800800FDC626 /* EthereumAddressConstants.swift in Sources */,
 				75AAF4F629756D6000FDC626 /* TransactionErrors.swift in Sources */,
+				75503BDE2AC4253A00AC6DBE /* EthereumSignature.swift in Sources */,
+				75503BE42AC4387600AC6DBE /* EthereumTransactionEIP1559Parameters.swift in Sources */,
 				75AAF4FC29757FB500FDC626 /* EthereumAddressError.swift in Sources */,
-				75AAF4F829756DAA00FDC626 /* EthereumUnspentTransaction.swift in Sources */,
 				75AAF4F429756C7300FDC626 /* EthereumTransaction.swift in Sources */,
 				75AAF4FA29757F8900FDC626 /* EthereumAddress.swift in Sources */,
+				75503BE22AC4265F00AC6DBE /* EthereumTransactionLegacyParameters.swift in Sources */,
+				75503BE02AC4258F00AC6DBE /* EthereumTransactionParametersProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
