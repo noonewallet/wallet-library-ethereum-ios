@@ -44,16 +44,16 @@ end
 #### Transaction signing
 
 ```swift
-
-    let unspentTransaction = EthereumUnspentTransaction(chainId: 1,
-                                                        nonce: 42,
-                                                        amount: "4000000000000000",
-                                                        address: "0x02dcc1a806685569e37cbc962510daea40a83618",
-                                                        gasPrice: "2500000000",
-                                                        gasLimit: "21000",
-                                                        data: "0x00")
     
-    let transaction = EthereumTransaction(unspentTx: unspentTransaction)
+    let params = EthereumTransactionLegacyParameters(chainid: 1,
+                                                 nonce: 42,
+                                                 value: HexConverter.convertToHexString(fromDecimalString: "4000000000000000"),
+                                                 address: "0x02dcc1a806685569e37cbc962510daea40a83618",
+                                                 gasPrice: HexConverter.convertToHexString(fromDecimalString: "2500000000"),
+                                                 gasLimit: HexConverter.convertToHexString(fromDecimalString: "21000"),
+                                                 input: "")
+            
+    let transaction = EthereumTransaction(parameters: params)
             
     let seed = Data(hex: "bb0a3858dfbca088a736663740c7ff884a1a1d28f9efac125b79c9edf551577dc43da97676f0ccc58a82c63ca02d44fddc4b5d57a8302be256ebaa3e9bdfe4bb")
 
