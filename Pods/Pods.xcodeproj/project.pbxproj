@@ -7,105 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05518547BE1B8A62769AD72DDB9F1461 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6FF9BEAF89A7B3874A5DC04C1EB4B7 /* String+Data.swift */; };
-		0D2ED62BC07CE33C781A869F37867617 /* ECDSA.h in Headers */ = {isa = PBXBuildFile; fileRef = B08FA774BE99FEF0DD068B09C258A26E /* ECDSA.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		0D36CD591E850FEACC9BAF275CD10386 /* curve25519-donna-32bit.h in Headers */ = {isa = PBXBuildFile; fileRef = F78202CE63C87A9301EE4C909E861999 /* curve25519-donna-32bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		0E4883EAB8F1674C9720A46B232F1DB9 /* Curve.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E48B6414D01EFA0AD59526F766E392E /* Curve.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		0EB73914B46F87DF19EE3A9095123E4D /* Bech32.h in Headers */ = {isa = PBXBuildFile; fileRef = A78D323E38E3EB3ABEBDFEAD7411C691 /* Bech32.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		0F1CD7DF566EEC7355F5ED3DBCFFF18A /* modm-donna-32bit.h in Headers */ = {isa = PBXBuildFile; fileRef = E370353664928190460E9503DB9EE69F /* modm-donna-32bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		16E76AFFF72CB6FC201C132D105CD766 /* HexConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D8A85A4DBD71B8A78F7E2F8CD24650B /* HexConverter.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0569C393B5306C19CB99DCDC41152B23 /* Curve.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D725DBABBE78E1F85251F9E02791A /* Curve.m */; };
+		096B12B8BF35084277F49B3266AFC7F3 /* Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = FCC97B7B61E46FA473BA56CC054DF717 /* Hash.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0E18948AEBDDF58427916930D423BC8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1582DF0F00DD26B3190CFE5E84B05F41 /* String+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C4D93A3141C83744CAD4A15271517 /* String+Hash.swift */; };
+		172E95458F31CE926F69C679D3C9C8F8 /* keccak-tiny.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B372BD8DBFFB204225A8B4C2B59D88 /* keccak-tiny.c */; };
+		17823E5F2BDE4C87AE0BBCE980E24B4F /* String+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D965C952BC729F253ADB05186B73052 /* String+Type.swift */; };
+		1795A987C0D81DA51194EBB7AED9DB69 /* KeyType.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF50277B72E67EFDE80984ACBDD0D4C /* KeyType.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1947898A152E00D7131604DCF6CDE02D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		19B581A7DFDE1BFB2B85CB63273F1BE6 /* ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 98955236A0E54DE6F344C7D2947C062A /* ed25519.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1CA650462A8ACAE61E91B31D6AB7F022 /* Bech32.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CDEC34C9A8DB74C06F428BB8066D93 /* Bech32.m */; };
-		1FE0C170AAAFC612E6834FE37A363C2E /* SignatureEdDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F38CE63CF9291A655FB667F563149 /* SignatureEdDSA.swift */; };
-		238A39A765EB653554C01CE77F44CC27 /* ed25519-donna-64bit-x86.h in Headers */ = {isa = PBXBuildFile; fileRef = BBE78CFCB9007B4F488CE5B79B7E7058 /* ed25519-donna-64bit-x86.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		2806B316A785920FFC2235E61AE4D214 /* WalletLibCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB4B12891A5A9D694EDA64A7BB00D3B /* WalletLibCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		284E3F42D640C2C64A831F4405C04289 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2948B0B549A3C69B05B6DFC0C1EE47C6 /* Bignum.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7494232390DDF9C9D89831AE9416DE /* Bignum.m */; };
+		2A6893477A9ACFC22B3FC0E38B2900C3 /* HDDerivationEd25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52AAF6FBF5B185BEFA535090BB48AD /* HDDerivationEd25519.swift */; };
 		2D81B4F22E6179FB37B9FE70046A2DBA /* WalletLibRLP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9842F27B24026458931DA2D83C21E4B /* WalletLibRLP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37604D1F2371B06EE0AD6DDD8197E7B4 /* HDDerivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE33530E06A01D66DF11147D1CA025 /* HDDerivation.swift */; };
+		32AC0F05B89AC7C987DD42DC60B0FB55 /* HDDerivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E45C73A0896F020A220AD0F64D3194 /* HDDerivation.swift */; };
+		34383F1B85BDC460A820E3E8224AC6FA /* KeyEd25519.m in Sources */ = {isa = PBXBuildFile; fileRef = B973CB59F4305B44E87D41E30E47E488 /* KeyEd25519.m */; };
+		347EB24F374F0B89092B938041AC98ED /* ECDSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 586CD44B5DD4342F0AD4624FC2BE1060 /* ECDSA.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		38656C617AF7055EA9E85073D0D6D6A2 /* WalletLibCrypto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C549012442E5B857E62FF7DF7AE2BAB4 /* WalletLibCrypto-dummy.m */; };
+		3AC1B4848A8D7633EDF00BF01A831959 /* SignatureECDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE895BE89F3C1334814604AD73D5B6 /* SignatureECDSA.swift */; };
 		3B009DD9E92AB6E4CF0D4D00F40C5B24 /* WalletLibRLP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCE1E6F0E5AB1D248996333A4199BB9 /* WalletLibRLP-dummy.m */; };
+		3B26249993E503B9F11BC8154417ADEF /* HexConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A27479AA31837D63346837DA6C90D1 /* HexConverter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3C52F10F3FC24C19311A95489343EF95 /* Pods-WalletLibEthereum-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE59014DDA19D901C2A38C461623522 /* Pods-WalletLibEthereum-dummy.m */; };
-		3C5616AB3CD68568A8687E2514540DF6 /* SignatureECDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28C6C5C082085F5B53BE3C95869B1CE /* SignatureECDSA.swift */; };
-		3E2AA0536523EACEBD9A0646D8F705CD /* HDDerivationEd25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1ACF5245701FDCCA05A06DA25ED23 /* HDDerivationEd25519.swift */; };
-		3E46528E16DFBEABE5FBA82A3FA4CE34 /* Bignum.h in Headers */ = {isa = PBXBuildFile; fileRef = 809A0C50E56C72F4D9E384F478D328FF /* Bignum.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3F7109EA4BBBB22A35AD2596A6EE1EAB /* Base58.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315B7F4BC799091820481EB0367E95B /* Base58.m */; };
-		3FF89D2CC6D59A799501B72BAA5058F4 /* KeyEd25519.h in Headers */ = {isa = PBXBuildFile; fileRef = BBCBD61C91D8041B0A12A32D11DE6297 /* KeyEd25519.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		44FA53935CF21D948CACCC4FF76B986C /* String+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E12D8E97F3FC47DEFE559C05285269F /* String+Components.swift */; };
-		4B6EC7BB17B227A9FB5F5EF3AE847445 /* DataConvertibleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A28E573CAF7896F0F55F2C4C9817F /* DataConvertibleProtocol.swift */; };
+		3E2FC7A6ED122E8ABD4C7414FFB0B300 /* Bech32.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A32DC961DC818B3CCF7C7047D0F334 /* Bech32.m */; };
+		429D3E73183EDC601C02901487B0DA68 /* Numeric+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34614802696D802D1687A5DFCB1F26B7 /* Numeric+Data.swift */; };
+		439489EFA3B672635A563A2F067D58A5 /* ed25519-donna-portable.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1BB0911DB5501C702C6CA8A8B53282 /* ed25519-donna-portable.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4BA99F844A3869FD561ACB75A87CF206 /* RLP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BCE04E879A8E992EBFEC0123039180 /* RLP.swift */; };
-		50B40886D8E2AC894B349DBB49CBBF8D /* keccak-tiny.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E36083319013D8623FD301339649D /* keccak-tiny.c */; };
-		51023FF496527E3FB62AF6321DB0C253 /* Data+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CD6E72D463C86DCA20C814B785792 /* Data+Hash.swift */; };
-		52581C9A41E77ECBA4F51B4E39FFEDE9 /* Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 294E8D059B7D95D9F046974BE43A5EE0 /* Hash.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		54638EF2349788BBE7C4BA7A612D2864 /* HexConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = A553B2C44D5DA2F32EA45D91484F0482 /* HexConverter.m */; };
-		546587CF6FFCA647589AE74FBE7F11BD /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC4ADBC3DC295989405E36341C3391 /* blake2b.c */; };
-		54817BF73CF2367DD4C34F3D3C1DE424 /* KeySecp256k1.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A363FDDAFE3AAC627FEE252E34FB3B /* KeySecp256k1.m */; };
-		569A369F7D973FBE4BE264A7D73A521A /* String+Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C62DDF7F2ACB1550AF3F5064D095F7E /* String+Base58.swift */; };
-		584AB60DA7AEA2AD2B9F27847FE82F72 /* ed25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD002BFDB78C60D0C64EA7A181922A /* ed25519.c */; };
-		5BA9460C92E13821B49AEF7460217965 /* KeySecp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF5A576FD6A43B34B5AD2141A14C430 /* KeySecp256k1.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		5E81BE52585746C09ED2D11F410918BB /* Data+Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA6805549C3C542D74030993CDE717 /* Data+Base58.swift */; };
-		5EC054D3B7FF5E21A9EE707E98EA804F /* sign.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CC11774351A14F8743AB1E291A73768 /* sign.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6246A5C90432471AF1550F9AF42C4599 /* WalletLibCrypto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B22E09F56111CDF942F86FBF2204CB1E /* WalletLibCrypto-dummy.m */; };
-		6C77E2E6544695B664C4C44BDB4C5B8F /* ed25519-donna-portable.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B01C506F8E1C1C1ABC76F21EA3AF35 /* ed25519-donna-portable.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6EDA5D5FE0A2FA4CD65D56709FB43430 /* EdDSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E8F8BA275DAA91A6D148265D9A391A /* EdDSA.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7158436831544F0196F3F8FDC45FE2FF /* ed25519-donna-batchverify.h in Headers */ = {isa = PBXBuildFile; fileRef = A107029501E5B385873D95F1EFD12331 /* ed25519-donna-batchverify.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7D0404B935FAFD501B67CA51B7F8B36C /* ed25519-donna-64bit-x86-32bit.h in Headers */ = {isa = PBXBuildFile; fileRef = FD831666816C0D4909D8F7E744193BBA /* ed25519-donna-64bit-x86-32bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4E33DB8BE992AACB0C7AD9B5FA567E5E /* ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = B19FE4E64F63B98A395CDA195E031EDB /* ed25519.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5CC77CBF6AA181BFC00C10EFB6976F85 /* HexConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 334BC53AD5B9800ABD5B66712AB86800 /* HexConverter.m */; };
+		5F05C29247B4287CB01DF3DC95415AE8 /* modm-donna-64bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E2362081399F6A1C7B37B74F8A71BB /* modm-donna-64bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		60453BBE7A6B7A6A49902E1C1D144194 /* TweetNacl.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F29A9CF0BDD556094295C4E110B42E /* TweetNacl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		657D495EE8919F61415262BDEA995630 /* sign.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCE7A541DF1FD3CEAAA3CC8FC7B271E /* sign.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		66694E8585456BC80396C1FF6ACBCE0C /* DataConvertibleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B94CCB8EC61347F35FDB940C0290835 /* DataConvertibleProtocol.swift */; };
+		6A21D6BBA5B464A501BE1421FE9BC663 /* SignatureEdDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B34BE70864115EC4204BDA317D4946 /* SignatureEdDSA.swift */; };
+		6A9DC35342DF6735D28527D58350D1F2 /* Base58.m in Sources */ = {isa = PBXBuildFile; fileRef = 09743845E464ECCC5206852DA241DEC6 /* Base58.m */; };
+		6D04F14112025F0C1A830C6CF7DA6BA1 /* String+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1454298940C9D102A93ABC29436C6B7 /* String+Components.swift */; };
+		71E86D88F883206AC4EAC9E5810DEBE3 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169269846C2630A537767F85CC7DEB08 /* String+Data.swift */; };
+		7559FFFB7AF8AB165881A9E2D2CFA15F /* curve25519-donna-64bit.h in Headers */ = {isa = PBXBuildFile; fileRef = A67A944C59A11C61902BB0C5EA228D6E /* curve25519-donna-64bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7B072C03AA6CFB03D1A55368C5804575 /* Data+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E3CFC40FB9A60241E610D835309D92 /* Data+HEX.swift */; };
 		810BCE2E9792AE9A81986DD792EB2C9D /* RLPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C7D0E4958BCDDDD4CE7EEFF013B5A8 /* RLPError.swift */; };
-		814B1C78D0801C1D9F4BF0BF8C55C96C /* blake2b.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCE45263D637EDD314DD4657CEF04B2 /* blake2b.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		83459079088C92CC1466039BC57F4F82 /* ed25519-donna-32bit-tables.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B00D7116C45EBC600673A2BCB7FF6A /* ed25519-donna-32bit-tables.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		87D2FD70C2B4486C5D9B8D7980FCE934 /* ed25519-donna-64bit-tables.h in Headers */ = {isa = PBXBuildFile; fileRef = 798034442F1ACB74C2F250EC8B7E7C45 /* ed25519-donna-64bit-tables.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8E19FCF49158DD95D5CF08B5D1E948DE /* ed25519-donna-impl-base.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CE1CAD2B436D966329FAEBF7391DED3 /* ed25519-donna-impl-base.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9071F5D0BD2D2197DF1B28A841E7843E /* Data+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413006F7A8A09DB38150B5702AC23313 /* Data+HEX.swift */; };
-		945C2AAB6A2B65EB8D3011D2FC5CADFF /* Base58.h in Headers */ = {isa = PBXBuildFile; fileRef = CAAF03D9ED84445EC53D5B66336D8B5F /* Base58.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9A33F0A691CF64DFD49E31AFC30BC795 /* Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1EB388B2FEC67D5A099CBEBA6AEB7 /* Hash.m */; };
-		9AD6D7416DC44A622FA3E5A11A347C88 /* String+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574329CC1660E69F0F3BA31BDDDFFCE1 /* String+Type.swift */; };
-		9FC856E9C0196E9E1D015C53C40ECF28 /* Curve.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC197CB3E1A48605971865012927D0 /* Curve.m */; };
+		818F568EF0E8A51654BC57F6FA12C779 /* TweetNacl.c in Sources */ = {isa = PBXBuildFile; fileRef = DBBB62E23AD2233E19DCA8277ACB7931 /* TweetNacl.c */; };
+		82E05B2917D283616CBF6A2D438542A3 /* curve25519-donna-helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 18603B192610F0433EDEF55A42480FF5 /* curve25519-donna-helpers.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		82EFC9149AFC065B08A44C495189F9C2 /* keccak-tiny.h in Headers */ = {isa = PBXBuildFile; fileRef = D5534F461F8D71C8019C47B4382C5E5F /* keccak-tiny.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		869853B1B9854E8C753F30B446DBEDDA /* ed25519-donna-impl-base.h in Headers */ = {isa = PBXBuildFile; fileRef = F60C1B2EAE8E4BCDDACEFCB40B9BA2D8 /* ed25519-donna-impl-base.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		923AB66DE5CCADA459388924EE19A217 /* EdDSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA9694773AB6447D4648D153545802 /* EdDSA.m */; };
+		95A6F2BCC01DC0CCCA0F6D6D4B74DAB3 /* modm-donna-32bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9372984CB324C1411F1488FC29A2F1E5 /* modm-donna-32bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9B35437FAB53BFA21EDBA2ABE27E67E6 /* EdDSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE99B83B23E6A740A47AA71A14EE9E1 /* EdDSA.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A006EBDF1DB2E75BCFCCBC67B41744B0 /* ed25519.c in Sources */ = {isa = PBXBuildFile; fileRef = EB01C8909FF2E842BF2B6388C50E1357 /* ed25519.c */; };
 		A22CF9DD7D02314C29665F706BC68A58 /* Pods-WalletLibEthereum-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B726D0C7EA58A36893E0C8C9F5CD23C /* Pods-WalletLibEthereum-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A40E5F493D2D86E766465E231B36B8BF /* ed25519-hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFE5193D6C5A32FDF3D487A96261FCF /* ed25519-hash.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B0FBF89FA285B3B40C81EAFD65D71A9D /* modm-donna-64bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C997B3D966E120D6DF9994441FB8590 /* modm-donna-64bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B7FD698B4B529B013BB6D8AB526BFEB4 /* KeyType.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3700E0BF157DAFA17C5C266C58350A /* KeyType.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		BA09925AC01C098AC18AD21ACA9D9F43 /* EdDSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E137F6E9D848290BF7EAAB2468474D /* EdDSA.m */; };
+		AD95AAF14C875E804FD08D7EEE8AA1A6 /* Bignum.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A639B1E94E8B791BA5AC64F359456E /* Bignum.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		ADEB19FF6D948E1B910FF3B1A1D381B4 /* ECDSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 392F938E5F186C396932B0B890C51F7C /* ECDSA.m */; };
+		B418E6E50615382CD7686C808F1D4266 /* Base58.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDDF556FEEEA7E3E660A3B712DDDBF6 /* Base58.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B58E8921C21267C79A1198027FD5626C /* Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4351082F5FBA43E07ED42B8C5E9A0360 /* Hash.m */; };
 		BCBFD648ED891B6052E1AAFEE7080F78 /* RLP+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D62545F184A9934BA5FD898C288112 /* RLP+Types.swift */; };
 		BE5714DF207E7B9DB0EA81A5F1A5B64A /* Pods-WalletLibEthereum-WalletLibEthereumTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0696F62B50F831AEA22CBDC3CFD13D8C /* Pods-WalletLibEthereum-WalletLibEthereumTests-dummy.m */; };
-		BEA0F6DC93501E8D275118042FC9322B /* Numeric+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E568CF981AB4DBDC621B56D428AEF92 /* Numeric+Data.swift */; };
-		C790330CAA75A0B87D5ABCE023822A93 /* curve25519-donna-helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C04FF0C5EDECE0ACA9316AEEFED122D /* curve25519-donna-helpers.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		CAC9F1C11D4AE81CBE099704708ABD04 /* KeyEd25519.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6D23747F798760189CB6706B94C357 /* KeyEd25519.m */; };
-		CB22D57CE581845B3F7275B20DB0058A /* curve25519-donna-64bit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF25239920006541421B7BF4A8B2DF71 /* curve25519-donna-64bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C14161FEBD217B7FC1B2A211D3F18DFE /* ed25519-donna-64bit-x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E19897A921DED8CEA94485EC54169C /* ed25519-donna-64bit-x86.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C5A7BA1C68BDF771F663856379B598BE /* blake2b.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F474DABA61F3F014FA68F0EEAED40D /* blake2b.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C631CE71951AB55B7A0EB94F5C68134C /* WalletLibCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A216CC690FF1C0126B6441DB02608BB /* WalletLibCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBAF8B1149F1DCEAB8562B72F24FB072 /* Pods-WalletLibEthereum-WalletLibEthereumTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B2CE4D259CF4D759E11C323B622551 /* Pods-WalletLibEthereum-WalletLibEthereumTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCC8C0D2D86A3C5ECD1682501281AC65 /* ECDSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD52A213816E4F36F8756841C4FC1F3 /* ECDSA.m */; };
-		CF9D331971356C208791BA9C56A70573 /* ed25519-donna.h in Headers */ = {isa = PBXBuildFile; fileRef = B49C087E5002183B3333A36E45772FAB /* ed25519-donna.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D38D1D0C46C97609D21B3D216026CB38 /* keccak-tiny.h in Headers */ = {isa = PBXBuildFile; fileRef = 8012ACDF8A5C47D76E666B7A56F7F8C0 /* keccak-tiny.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E320599C20397A776D15ACB8317B6B61 /* String+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E8BC629556B2DF2A457DFB8460035 /* String+Hash.swift */; };
+		CF930147471D65170B5E307811470AF4 /* KeyEd25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D1A014E0D74FEF437B57C0DA7CB3A6E /* KeyEd25519.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D1C60C4DB6B24984508418B92D9FD074 /* KeySecp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA50CFFF2DA24E8D79E1D606CFE8952 /* KeySecp256k1.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D2C17383DF841CEBFEEFD9FAD3EC54E0 /* ed25519-donna-64bit-tables.h in Headers */ = {isa = PBXBuildFile; fileRef = DB73E30601E80553A2DC6A1D398AA96F /* ed25519-donna-64bit-tables.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D500D3A042685A9AAC3334AB87601719 /* KeySecp256k1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F28C35C19C3E206DC41EDE4DB5EF0F4 /* KeySecp256k1.m */; };
+		D6A5E32075742C8125191125FFD5E9B3 /* ed25519-donna-basepoint-table.h in Headers */ = {isa = PBXBuildFile; fileRef = 41190C24D455348F0E78B4F2161DA956 /* ed25519-donna-basepoint-table.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D8075B52C4E32FB5868E7A0AC12C9E73 /* ed25519-donna-32bit-tables.h in Headers */ = {isa = PBXBuildFile; fileRef = 612D39CE2E21AE1FBEE1DD2F50218867 /* ed25519-donna-32bit-tables.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D87D8260A750B77C2421701D2A680C48 /* ed25519-donna-64bit-x86-32bit.h in Headers */ = {isa = PBXBuildFile; fileRef = F1DB1B64149C64EA0E18D2CA44AB8A6A /* ed25519-donna-64bit-x86-32bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D911A6CA54F51336C33983219C6909CA /* curve25519-donna-32bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C7078F97380608C4EBE0D9EB11B49D4 /* curve25519-donna-32bit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DDB389041D536805B948E4AFE7A4344C /* Bech32.h in Headers */ = {isa = PBXBuildFile; fileRef = 83772363B283890770FE540E78423A9F /* Bech32.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E4F6D3575D4604A026D5508638EE4867 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = 26C3FB0CAD4AFB5DCD4F969F88ADA330 /* blake2b.c */; };
 		E56A09F0B773D1039080BD4652723157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E991C6E35397BB10A8212FBDAF5F9CB3 /* Data+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15233EB82BDE0E877BBD4064981D2A20 /* Data+Type.swift */; };
-		EAE001AB978BF70725642D78CE9134B0 /* ed25519-donna-portable-identify.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C16ECC5C547E0FE7B8E97BE90BF794 /* ed25519-donna-portable-identify.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		EAB9C758B359CF99FAC8B308DA304288 /* ed25519-hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 997BF3410FD5F007E02DEA544D746E7F /* ed25519-hash.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		EC5C6403FABA6E259DF62C1D1B54D9ED /* Data+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422E424AFF70FB9B5DE5F0E66276F03D /* Data+Hash.swift */; };
+		EF5DA35415DE8628EC45934B526CEE50 /* Data+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4CB63EFA31DD02F253A7845FE3048B /* Data+Type.swift */; };
+		EFD9FB6D65E52F0425858EBBB7660086 /* ed25519-donna-batchverify.h in Headers */ = {isa = PBXBuildFile; fileRef = FD479938D35F4D40476126ECFE1634F1 /* ed25519-donna-batchverify.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F44AD0E6E88D20F6BB317223D3B2B95D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		FDE4E8A772F98210657B9FEA05E11B57 /* ed25519-donna-basepoint-table.h in Headers */ = {isa = PBXBuildFile; fileRef = 7877C10EA90975C197BB5312A3EDD44C /* ed25519-donna-basepoint-table.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F67477B15790CBBFDA94DF2C40110B97 /* Bignum.m in Sources */ = {isa = PBXBuildFile; fileRef = 227B3A932088840CE666C5C7FEEACEEE /* Bignum.m */; };
+		F8456B816B492DB3FD06C7C27CB2C75C /* ed25519-donna-portable-identify.h in Headers */ = {isa = PBXBuildFile; fileRef = B3B6ABDD22789FF8853CB1DB6A561F29 /* ed25519-donna-portable-identify.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F87332105365CF7F1E5FF289BE721C2E /* ed25519-donna.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E75CDE0EEB13E0E164F7252F0AF2FC /* ed25519-donna.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F89B520CEBE45AB6079868177FC5E66D /* String+Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E027ECD0DBA6F8ED205B73992546F58 /* String+Base58.swift */; };
+		F8C3274375B1092A9E3FAFD6BDAD5D9D /* Curve.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4AA2590CAD4C7A12040C6D87C392A4 /* Curve.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FEF9F5B563AAD9B2145616C0E49D21BA /* Data+Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB517B62658EFCE8EFDA31262D053AF8 /* Data+Base58.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6D403940B530CC7484F8318E996AA267 /* PBXContainerItemProxy */ = {
+		53E4CADC46B45145FFA194FC9F83E6A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9227C38889D81F0F9CBD991E79451324;
 			remoteInfo = WalletLibRLP;
 		};
-		8B0A0BB8CB3D9E1E85ADDD35DF6BF5FA /* PBXContainerItemProxy */ = {
+		A02618CD2310B64041D6AF486B5A0BC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E70CDF92FD14D97B23CF9496990BDE05;
 			remoteInfo = WalletLibCrypto;
 		};
-		972A466DF026BFFBFA9F6F92FF75D63E /* PBXContainerItemProxy */ = {
+		A3C8D942D207DC939EEFFD2B0C54C27A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E70CDF92FD14D97B23CF9496990BDE05;
 			remoteInfo = WalletLibCrypto;
 		};
-		B2A1F8391D442D778E4BA3DC36A3E88D /* PBXContainerItemProxy */ = {
+		C2779AADF7453035CB6C5EDF9F8F61D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -115,124 +117,118 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0061CB4F45FA974BF18BEDDCDAD4CCC8 /* WalletLibCrypto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WalletLibCrypto.modulemap; sourceTree = "<group>"; };
+		02A639B1E94E8B791BA5AC64F359456E /* Bignum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bignum.h; sourceTree = "<group>"; };
+		03B34BE70864115EC4204BDA317D4946 /* SignatureEdDSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignatureEdDSA.swift; sourceTree = "<group>"; };
 		05B0186B03EC89192E87DBF7FDBFD784 /* WalletLibRLP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WalletLibRLP-prefix.pch"; sourceTree = "<group>"; };
 		0696F62B50F831AEA22CBDC3CFD13D8C /* Pods-WalletLibEthereum-WalletLibEthereumTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WalletLibEthereum-WalletLibEthereumTests-dummy.m"; sourceTree = "<group>"; };
+		06E75CDE0EEB13E0E164F7252F0AF2FC /* ed25519-donna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna.h"; sourceTree = "<group>"; };
 		097158FBB6DC741F121AE6CC50B3F711 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		0DFE5193D6C5A32FDF3D487A96261FCF /* ed25519-hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-hash.h"; sourceTree = "<group>"; };
+		09743845E464ECCC5206852DA241DEC6 /* Base58.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Base58.m; sourceTree = "<group>"; };
 		12BCE04E879A8E992EBFEC0123039180 /* RLP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RLP.swift; path = WalletLibRLP/RLP/RLP.swift; sourceTree = "<group>"; };
-		15233EB82BDE0E877BBD4064981D2A20 /* Data+Type.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Type.swift"; sourceTree = "<group>"; };
-		16AB10B728FC93C8001EED62A6849E3A /* WalletLibCrypto.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WalletLibCrypto.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		16B00D7116C45EBC600673A2BCB7FF6A /* ed25519-donna-32bit-tables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-32bit-tables.h"; sourceTree = "<group>"; };
+		169269846C2630A537767F85CC7DEB08 /* String+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Data.swift"; sourceTree = "<group>"; };
+		17E2362081399F6A1C7B37B74F8A71BB /* modm-donna-64bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "modm-donna-64bit.h"; sourceTree = "<group>"; };
+		18603B192610F0433EDEF55A42480FF5 /* curve25519-donna-helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "curve25519-donna-helpers.h"; sourceTree = "<group>"; };
+		18DA9694773AB6447D4648D153545802 /* EdDSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EdDSA.m; sourceTree = "<group>"; };
 		1AE59014DDA19D901C2A38C461623522 /* Pods-WalletLibEthereum-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WalletLibEthereum-dummy.m"; sourceTree = "<group>"; };
 		1B331C24AF168C34F89BD31CB76280EA /* Pods-WalletLibEthereum-WalletLibEthereumTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WalletLibEthereum-WalletLibEthereumTests-frameworks.sh"; sourceTree = "<group>"; };
-		1C7494232390DDF9C9D89831AE9416DE /* Bignum.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Bignum.m; sourceTree = "<group>"; };
-		1CD726FFC514F55B684E5CB2AC8A0292 /* WalletLibCrypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WalletLibCrypto.debug.xcconfig; sourceTree = "<group>"; };
-		1E5E36083319013D8623FD301339649D /* keccak-tiny.c */ = {isa = PBXFileReference; includeInIndex = 1; path = "keccak-tiny.c"; sourceTree = "<group>"; };
-		214F38CE63CF9291A655FB667F563149 /* SignatureEdDSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignatureEdDSA.swift; sourceTree = "<group>"; };
-		2819FE9E5F9707CBE3BEEE20F0432018 /* WalletLibCrypto-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WalletLibCrypto-Info.plist"; sourceTree = "<group>"; };
-		294E8D059B7D95D9F046974BE43A5EE0 /* Hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Hash.h; sourceTree = "<group>"; };
+		1DA50CFFF2DA24E8D79E1D606CFE8952 /* KeySecp256k1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KeySecp256k1.h; sourceTree = "<group>"; };
+		1F5C4D93A3141C83744CAD4A15271517 /* String+Hash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Hash.swift"; sourceTree = "<group>"; };
+		21F474DABA61F3F014FA68F0EEAED40D /* blake2b.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = blake2b.h; sourceTree = "<group>"; };
+		227B3A932088840CE666C5C7FEEACEEE /* Bignum.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Bignum.m; sourceTree = "<group>"; };
+		26C3FB0CAD4AFB5DCD4F969F88ADA330 /* blake2b.c */ = {isa = PBXFileReference; includeInIndex = 1; path = blake2b.c; sourceTree = "<group>"; };
+		29E19897A921DED8CEA94485EC54169C /* ed25519-donna-64bit-x86.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-64bit-x86.h"; sourceTree = "<group>"; };
 		2B726D0C7EA58A36893E0C8C9F5CD23C /* Pods-WalletLibEthereum-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WalletLibEthereum-umbrella.h"; sourceTree = "<group>"; };
-		2BFD002BFDB78C60D0C64EA7A181922A /* ed25519.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ed25519.c; sourceTree = "<group>"; };
-		2C997B3D966E120D6DF9994441FB8590 /* modm-donna-64bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "modm-donna-64bit.h"; sourceTree = "<group>"; };
-		3153C7CF9BDC7DEB15D68A223FE5F85C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		32E137F6E9D848290BF7EAAB2468474D /* EdDSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EdDSA.m; sourceTree = "<group>"; };
+		2D1A014E0D74FEF437B57C0DA7CB3A6E /* KeyEd25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KeyEd25519.h; sourceTree = "<group>"; };
+		2DCE7A541DF1FD3CEAAA3CC8FC7B271E /* sign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sign.h; sourceTree = "<group>"; };
+		334BC53AD5B9800ABD5B66712AB86800 /* HexConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HexConverter.m; sourceTree = "<group>"; };
+		34614802696D802D1687A5DFCB1F26B7 /* Numeric+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Numeric+Data.swift"; sourceTree = "<group>"; };
+		3471C5A8FB7796F9F15DF6A5CB56FBC0 /* WalletLibCrypto-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WalletLibCrypto-Info.plist"; sourceTree = "<group>"; };
 		34F61A151FD3C2599D03D069F1EB7B22 /* Pods-WalletLibEthereum-WalletLibEthereumTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WalletLibEthereum-WalletLibEthereumTests"; path = Pods_WalletLibEthereum_WalletLibEthereumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		377B3044DC68FE940BB67EB3B83C9CBE /* Pods-WalletLibEthereum-WalletLibEthereumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WalletLibEthereum-WalletLibEthereumTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3AA1EB388B2FEC67D5A099CBEBA6AEB7 /* Hash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Hash.m; sourceTree = "<group>"; };
-		3BF5A576FD6A43B34B5AD2141A14C430 /* KeySecp256k1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KeySecp256k1.h; sourceTree = "<group>"; };
-		3CE1CAD2B436D966329FAEBF7391DED3 /* ed25519-donna-impl-base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-impl-base.h"; sourceTree = "<group>"; };
-		3E12D8E97F3FC47DEFE559C05285269F /* String+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Components.swift"; sourceTree = "<group>"; };
-		3E568CF981AB4DBDC621B56D428AEF92 /* Numeric+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Numeric+Data.swift"; sourceTree = "<group>"; };
-		413006F7A8A09DB38150B5702AC23313 /* Data+HEX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+HEX.swift"; sourceTree = "<group>"; };
+		392F938E5F186C396932B0B890C51F7C /* ECDSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ECDSA.m; sourceTree = "<group>"; };
+		3C4AA2590CAD4C7A12040C6D87C392A4 /* Curve.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Curve.h; sourceTree = "<group>"; };
+		3D965C952BC729F253ADB05186B73052 /* String+Type.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Type.swift"; sourceTree = "<group>"; };
+		3EE99B83B23E6A740A47AA71A14EE9E1 /* EdDSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EdDSA.h; sourceTree = "<group>"; };
+		41190C24D455348F0E78B4F2161DA956 /* ed25519-donna-basepoint-table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-basepoint-table.h"; sourceTree = "<group>"; };
+		422E424AFF70FB9B5DE5F0E66276F03D /* Data+Hash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Hash.swift"; sourceTree = "<group>"; };
 		42F9E3CD982D3C93E2EF3C9B599928D1 /* Pods-WalletLibEthereum-WalletLibEthereumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WalletLibEthereum-WalletLibEthereumTests.release.xcconfig"; sourceTree = "<group>"; };
 		430F538305753401584F18B31E422464 /* Pods-WalletLibEthereum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WalletLibEthereum.debug.xcconfig"; sourceTree = "<group>"; };
-		437E8BC629556B2DF2A457DFB8460035 /* String+Hash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Hash.swift"; sourceTree = "<group>"; };
-		44E8F8BA275DAA91A6D148265D9A391A /* EdDSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EdDSA.h; sourceTree = "<group>"; };
-		4C62DDF7F2ACB1550AF3F5064D095F7E /* String+Base58.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Base58.swift"; sourceTree = "<group>"; };
-		511CD6E72D463C86DCA20C814B785792 /* Data+Hash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Hash.swift"; sourceTree = "<group>"; };
+		4351082F5FBA43E07ED42B8C5E9A0360 /* Hash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Hash.m; sourceTree = "<group>"; };
+		4A216CC690FF1C0126B6441DB02608BB /* WalletLibCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WalletLibCrypto.h; path = WalletLibCrypto/WalletLibCrypto.h; sourceTree = "<group>"; };
+		4F28C35C19C3E206DC41EDE4DB5EF0F4 /* KeySecp256k1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KeySecp256k1.m; sourceTree = "<group>"; };
 		553A5C9C97575D4B5B587F5CF7370148 /* Pods-WalletLibEthereum.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WalletLibEthereum.modulemap"; sourceTree = "<group>"; };
-		574329CC1660E69F0F3BA31BDDDFFCE1 /* String+Type.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Type.swift"; sourceTree = "<group>"; };
-		57A363FDDAFE3AAC627FEE252E34FB3B /* KeySecp256k1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KeySecp256k1.m; sourceTree = "<group>"; };
+		586CD44B5DD4342F0AD4624FC2BE1060 /* ECDSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECDSA.h; sourceTree = "<group>"; };
+		5BD430910DA7E816D8EA3D87CE1FC844 /* WalletLibCrypto.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WalletLibCrypto.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5C7036ACD7291AFDB76D5247D56EF1D5 /* WalletLibRLP.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WalletLibRLP.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5E48B6414D01EFA0AD59526F766E392E /* Curve.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Curve.h; sourceTree = "<group>"; };
-		5ECC4ADBC3DC295989405E36341C3391 /* blake2b.c */ = {isa = PBXFileReference; includeInIndex = 1; path = blake2b.c; sourceTree = "<group>"; };
+		612D39CE2E21AE1FBEE1DD2F50218867 /* ed25519-donna-32bit-tables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-32bit-tables.h"; sourceTree = "<group>"; };
 		621813580FAE36D0D35B4B792887145D /* WalletLibRLP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WalletLibRLP.modulemap; sourceTree = "<group>"; };
-		65BE33530E06A01D66DF11147D1CA025 /* HDDerivation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HDDerivation.swift; sourceTree = "<group>"; };
-		67CB7BF6ACFAFF088C477157C0F13700 /* libcrypto-ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libcrypto-ios.a"; path = "WalletLibCrypto/OpenSSL/libraries/libcrypto-ios.a"; sourceTree = "<group>"; };
+		65B372BD8DBFFB204225A8B4C2B59D88 /* keccak-tiny.c */ = {isa = PBXFileReference; includeInIndex = 1; path = "keccak-tiny.c"; sourceTree = "<group>"; };
 		68C1ADBD2F9038E6B759C7648ABF7EE2 /* Pods-WalletLibEthereum-WalletLibEthereumTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WalletLibEthereum-WalletLibEthereumTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6B29B3101E9DF588FA41E0DE044A2A86 /* WalletLibCrypto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = WalletLibCrypto.modulemap; path = WalletLibCrypto/WalletLibCrypto.modulemap; sourceTree = "<group>"; };
 		6C494C08277805EF62609486D9BD54A8 /* WalletLibCrypto */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WalletLibCrypto; path = WalletLibCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C6FF9BEAF89A7B3874A5DC04C1EB4B7 /* String+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Data.swift"; sourceTree = "<group>"; };
+		6C7078F97380608C4EBE0D9EB11B49D4 /* curve25519-donna-32bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "curve25519-donna-32bit.h"; sourceTree = "<group>"; };
+		6CDDF556FEEEA7E3E660A3B712DDDBF6 /* Base58.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Base58.h; sourceTree = "<group>"; };
+		6E027ECD0DBA6F8ED205B73992546F58 /* String+Base58.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Base58.swift"; sourceTree = "<group>"; };
 		6FCE1E6F0E5AB1D248996333A4199BB9 /* WalletLibRLP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WalletLibRLP-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		771305E4024C566FFE6C0F624831BAFF /* Pods-WalletLibEthereum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WalletLibEthereum.release.xcconfig"; sourceTree = "<group>"; };
 		77B2CE4D259CF4D759E11C323B622551 /* Pods-WalletLibEthereum-WalletLibEthereumTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WalletLibEthereum-WalletLibEthereumTests-umbrella.h"; sourceTree = "<group>"; };
-		7877C10EA90975C197BB5312A3EDD44C /* ed25519-donna-basepoint-table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-basepoint-table.h"; sourceTree = "<group>"; };
-		78C16ECC5C547E0FE7B8E97BE90BF794 /* ed25519-donna-portable-identify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-portable-identify.h"; sourceTree = "<group>"; };
-		798034442F1ACB74C2F250EC8B7E7C45 /* ed25519-donna-64bit-tables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-64bit-tables.h"; sourceTree = "<group>"; };
-		7C04FF0C5EDECE0ACA9316AEEFED122D /* curve25519-donna-helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "curve25519-donna-helpers.h"; sourceTree = "<group>"; };
-		7E6D23747F798760189CB6706B94C357 /* KeyEd25519.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KeyEd25519.m; sourceTree = "<group>"; };
-		7FCE45263D637EDD314DD4657CEF04B2 /* blake2b.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = blake2b.h; sourceTree = "<group>"; };
-		8012ACDF8A5C47D76E666B7A56F7F8C0 /* keccak-tiny.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "keccak-tiny.h"; sourceTree = "<group>"; };
-		809A0C50E56C72F4D9E384F478D328FF /* Bignum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bignum.h; sourceTree = "<group>"; };
 		825ADB425DE1790388B35433ECA0AB28 /* Pods-WalletLibEthereum-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WalletLibEthereum-Info.plist"; sourceTree = "<group>"; };
+		82C8A338BE2795BCF4A6EDBDFCD78C6B /* WalletLibCrypto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = WalletLibCrypto.modulemap; path = WalletLibCrypto/WalletLibCrypto.modulemap; sourceTree = "<group>"; };
+		83772363B283890770FE540E78423A9F /* Bech32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bech32.h; sourceTree = "<group>"; };
 		843EDB9BDF7A77673D924C7A97215E04 /* WalletLibRLP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WalletLibRLP.release.xcconfig; sourceTree = "<group>"; };
-		8CC11774351A14F8743AB1E291A73768 /* sign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sign.h; sourceTree = "<group>"; };
-		8D5A28E573CAF7896F0F55F2C4C9817F /* DataConvertibleProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataConvertibleProtocol.swift; sourceTree = "<group>"; };
-		9315B7F4BC799091820481EB0367E95B /* Base58.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Base58.m; sourceTree = "<group>"; };
+		8B94CCB8EC61347F35FDB940C0290835 /* DataConvertibleProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataConvertibleProtocol.swift; sourceTree = "<group>"; };
 		9317F212914EDDA5FE2DE664079F3ADA /* WalletLibRLP-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WalletLibRLP-Info.plist"; sourceTree = "<group>"; };
+		9372984CB324C1411F1488FC29A2F1E5 /* modm-donna-32bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "modm-donna-32bit.h"; sourceTree = "<group>"; };
+		93A27479AA31837D63346837DA6C90D1 /* HexConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HexConverter.h; sourceTree = "<group>"; };
+		94E3CFC40FB9A60241E610D835309D92 /* Data+HEX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+HEX.swift"; sourceTree = "<group>"; };
 		96D62545F184A9934BA5FD898C288112 /* RLP+Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RLP+Types.swift"; path = "WalletLibRLP/RLP/RLP+Types.swift"; sourceTree = "<group>"; };
-		98955236A0E54DE6F344C7D2947C062A /* ed25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ed25519.h; sourceTree = "<group>"; };
-		9CD52A213816E4F36F8756841C4FC1F3 /* ECDSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ECDSA.m; sourceTree = "<group>"; };
-		9D8A85A4DBD71B8A78F7E2F8CD24650B /* HexConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HexConverter.h; sourceTree = "<group>"; };
+		997BF3410FD5F007E02DEA544D746E7F /* ed25519-hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-hash.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DE6405B2AA1A85597BD37FE31C66699 /* Pods-WalletLibEthereum-WalletLibEthereumTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WalletLibEthereum-WalletLibEthereumTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9E7FE0746A1C6EA1F757E28470915031 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		A107029501E5B385873D95F1EFD12331 /* ed25519-donna-batchverify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-batchverify.h"; sourceTree = "<group>"; };
-		A28C6C5C082085F5B53BE3C95869B1CE /* SignatureECDSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignatureECDSA.swift; sourceTree = "<group>"; };
-		A553B2C44D5DA2F32EA45D91484F0482 /* HexConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HexConverter.m; sourceTree = "<group>"; };
-		A78D323E38E3EB3ABEBDFEAD7411C691 /* Bech32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bech32.h; sourceTree = "<group>"; };
+		A44460CBD3FFAC981852650AD4E4949A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A67A944C59A11C61902BB0C5EA228D6E /* curve25519-donna-64bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "curve25519-donna-64bit.h"; sourceTree = "<group>"; };
 		AA1D68BF7C0A8E2D28DDB8C2F79D330C /* Pods-WalletLibEthereum-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WalletLibEthereum-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB517B62658EFCE8EFDA31262D053AF8 /* Data+Base58.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Base58.swift"; sourceTree = "<group>"; };
+		AC4CB63EFA31DD02F253A7845FE3048B /* Data+Type.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Type.swift"; sourceTree = "<group>"; };
+		AF1BB0911DB5501C702C6CA8A8B53282 /* ed25519-donna-portable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-portable.h"; sourceTree = "<group>"; };
+		AFF8F98F57FD19B3EB2AF66B085FC7E8 /* libcrypto-ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libcrypto-ios.a"; path = "WalletLibCrypto/OpenSSL/libraries/libcrypto-ios.a"; sourceTree = "<group>"; };
 		B020EE21F64FB0D19AD8C8FE348682DD /* Pods-WalletLibEthereum-WalletLibEthereumTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WalletLibEthereum-WalletLibEthereumTests.modulemap"; sourceTree = "<group>"; };
-		B08FA774BE99FEF0DD068B09C258A26E /* ECDSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECDSA.h; sourceTree = "<group>"; };
-		B22E09F56111CDF942F86FBF2204CB1E /* WalletLibCrypto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WalletLibCrypto-dummy.m"; sourceTree = "<group>"; };
+		B19FE4E64F63B98A395CDA195E031EDB /* ed25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ed25519.h; sourceTree = "<group>"; };
+		B3B6ABDD22789FF8853CB1DB6A561F29 /* ed25519-donna-portable-identify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-portable-identify.h"; sourceTree = "<group>"; };
 		B3C8A0288709E1E2A09482C03951A453 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		B49C087E5002183B3333A36E45772FAB /* ed25519-donna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna.h"; sourceTree = "<group>"; };
+		B5A32DC961DC818B3CCF7C7047D0F334 /* Bech32.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Bech32.m; sourceTree = "<group>"; };
+		B973CB59F4305B44E87D41E30E47E488 /* KeyEd25519.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KeyEd25519.m; sourceTree = "<group>"; };
 		B9842F27B24026458931DA2D83C21E4B /* WalletLibRLP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WalletLibRLP-umbrella.h"; sourceTree = "<group>"; };
-		BBCBD61C91D8041B0A12A32D11DE6297 /* KeyEd25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KeyEd25519.h; sourceTree = "<group>"; };
-		BBE78CFCB9007B4F488CE5B79B7E7058 /* ed25519-donna-64bit-x86.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-64bit-x86.h"; sourceTree = "<group>"; };
-		C9BD1C178460943E0F0C9FED50F7AA1A /* WalletLibCrypto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WalletLibCrypto.modulemap; sourceTree = "<group>"; };
+		BAF50277B72E67EFDE80984ACBDD0D4C /* KeyType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KeyType.h; sourceTree = "<group>"; };
+		C30EA870CAD815E742312E33E5EB2A85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C549012442E5B857E62FF7DF7AE2BAB4 /* WalletLibCrypto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WalletLibCrypto-dummy.m"; sourceTree = "<group>"; };
+		C70D725DBABBE78E1F85251F9E02791A /* Curve.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Curve.m; sourceTree = "<group>"; };
 		C9C7D0E4958BCDDDD4CE7EEFF013B5A8 /* RLPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RLPError.swift; path = WalletLibRLP/RLP/RLPError.swift; sourceTree = "<group>"; };
-		CAAF03D9ED84445EC53D5B66336D8B5F /* Base58.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Base58.h; sourceTree = "<group>"; };
-		CDFC197CB3E1A48605971865012927D0 /* Curve.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Curve.m; sourceTree = "<group>"; };
+		CD0A1EA726C0031F3634830659B15002 /* WalletLibCrypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WalletLibCrypto.debug.xcconfig; sourceTree = "<group>"; };
 		D18F2886A342BFC20878D6EDF73F4AC1 /* WalletLibRLP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WalletLibRLP.debug.xcconfig; sourceTree = "<group>"; };
-		D6CA6805549C3C542D74030993CDE717 /* Data+Base58.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Base58.swift"; sourceTree = "<group>"; };
+		D5534F461F8D71C8019C47B4382C5E5F /* keccak-tiny.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "keccak-tiny.h"; sourceTree = "<group>"; };
+		D6E45C73A0896F020A220AD0F64D3194 /* HDDerivation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HDDerivation.swift; sourceTree = "<group>"; };
 		D79B3F2A294DD4962B80584D76601CFC /* Pods-WalletLibEthereum-WalletLibEthereumTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WalletLibEthereum-WalletLibEthereumTests-Info.plist"; sourceTree = "<group>"; };
+		D7EE3DC79D17B3CD180C66C35DEC671D /* WalletLibCrypto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WalletLibCrypto-prefix.pch"; sourceTree = "<group>"; };
 		D84171F59587DDDD234D7D5B548EEABB /* Pods-WalletLibEthereum */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WalletLibEthereum"; path = Pods_WalletLibEthereum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8B01C506F8E1C1C1ABC76F21EA3AF35 /* ed25519-donna-portable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-portable.h"; sourceTree = "<group>"; };
-		DB382B875C238FB21007B3996FF4F00E /* WalletLibCrypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WalletLibCrypto.release.xcconfig; sourceTree = "<group>"; };
+		D9F29A9CF0BDD556094295C4E110B42E /* TweetNacl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TweetNacl.h; sourceTree = "<group>"; };
+		DB73E30601E80553A2DC6A1D398AA96F /* ed25519-donna-64bit-tables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-64bit-tables.h"; sourceTree = "<group>"; };
 		DBB966AE88D89AE1BE3D6EFC3265EDFB /* WalletLibRLP */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WalletLibRLP; path = WalletLibRLP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD3700E0BF157DAFA17C5C266C58350A /* KeyType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KeyType.h; sourceTree = "<group>"; };
-		DF25239920006541421B7BF4A8B2DF71 /* curve25519-donna-64bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "curve25519-donna-64bit.h"; sourceTree = "<group>"; };
-		DFE5CAEEA53D7101A7F5391781F4D319 /* WalletLibCrypto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WalletLibCrypto-prefix.pch"; sourceTree = "<group>"; };
-		E370353664928190460E9503DB9EE69F /* modm-donna-32bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "modm-donna-32bit.h"; sourceTree = "<group>"; };
-		F5CDEC34C9A8DB74C06F428BB8066D93 /* Bech32.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Bech32.m; sourceTree = "<group>"; };
-		F78202CE63C87A9301EE4C909E861999 /* curve25519-donna-32bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "curve25519-donna-32bit.h"; sourceTree = "<group>"; };
-		F7E1ACF5245701FDCCA05A06DA25ED23 /* HDDerivationEd25519.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HDDerivationEd25519.swift; sourceTree = "<group>"; };
-		FCB4B12891A5A9D694EDA64A7BB00D3B /* WalletLibCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WalletLibCrypto.h; path = WalletLibCrypto/WalletLibCrypto.h; sourceTree = "<group>"; };
+		DBBB62E23AD2233E19DCA8277ACB7931 /* TweetNacl.c */ = {isa = PBXFileReference; includeInIndex = 1; path = TweetNacl.c; sourceTree = "<group>"; };
+		DD52AAF6FBF5B185BEFA535090BB48AD /* HDDerivationEd25519.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HDDerivationEd25519.swift; sourceTree = "<group>"; };
+		E1454298940C9D102A93ABC29436C6B7 /* String+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Components.swift"; sourceTree = "<group>"; };
+		EAFE895BE89F3C1334814604AD73D5B6 /* SignatureECDSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignatureECDSA.swift; sourceTree = "<group>"; };
+		EB01C8909FF2E842BF2B6388C50E1357 /* ed25519.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ed25519.c; sourceTree = "<group>"; };
+		F1DB1B64149C64EA0E18D2CA44AB8A6A /* ed25519-donna-64bit-x86-32bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-64bit-x86-32bit.h"; sourceTree = "<group>"; };
+		F60C1B2EAE8E4BCDDACEFCB40B9BA2D8 /* ed25519-donna-impl-base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-impl-base.h"; sourceTree = "<group>"; };
+		FB5ED0E8EE9B1B012872C01A2B95EAB9 /* WalletLibCrypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WalletLibCrypto.release.xcconfig; sourceTree = "<group>"; };
+		FCC97B7B61E46FA473BA56CC054DF717 /* Hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Hash.h; sourceTree = "<group>"; };
 		FD060E4DF68E03F7B2BFABABF6105BB9 /* Pods-WalletLibEthereum-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WalletLibEthereum-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FD831666816C0D4909D8F7E744193BBA /* ed25519-donna-64bit-x86-32bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-64bit-x86-32bit.h"; sourceTree = "<group>"; };
+		FD479938D35F4D40476126ECFE1634F1 /* ed25519-donna-batchverify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ed25519-donna-batchverify.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23F3B2629A65B4B75B5D1E916DED0253 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				284E3F42D640C2C64A831F4405C04289 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5B744D1A6AF79F718C4622EAC015C264 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +242,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1947898A152E00D7131604DCF6CDE02D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3870F9A6B49F1B2E2CB982FB917957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E18948AEBDDF58427916930D423BC8F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,14 +277,23 @@
 			path = ../Submodule/WalletLibRLP;
 			sourceTree = "<group>";
 		};
-		1408673AEB59C3D4906162B315F54D8D /* Encoding */ = {
+		0BF518BAB9CBF0679166329178D1B13A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E2C97AFE78CB637AF0571E6CD5435C9E /* Base58 */,
-				D322DF4FEAD03CDED5B08E8B29E865DE /* Bech32 */,
+				8B94CCB8EC61347F35FDB940C0290835 /* DataConvertibleProtocol.swift */,
 			);
-			name = Encoding;
-			path = WalletLibCrypto/Encoding;
+			name = Protocols;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1798274EF350A939321C36CFB9685CA4 /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				B973CB59F4305B44E87D41E30E47E488 /* KeyEd25519.m */,
+				4F28C35C19C3E206DC41EDE4DB5EF0F4 /* KeySecp256k1.m */,
+			);
+			name = Key;
+			path = Key;
 			sourceTree = "<group>";
 		};
 		19EAFCEE3B57E4891D53887E7F0CED08 /* Pods-WalletLibEthereum-WalletLibEthereumTests */ = {
@@ -316,81 +329,52 @@
 			path = "Target Support Files/Pods-WalletLibEthereum";
 			sourceTree = "<group>";
 		};
-		2431B09689D5949B593C4AD65C4F9737 /* Crypto */ = {
+		25B39EAA4F4B6079EF8FE62D43DB1B16 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				E7C1FFAD1546B4C12F0CB3F5054EAF82 /* Bignum */,
-				4C2E08AEDBB7F2BB994912C0F7EBA6D9 /* Curve */,
-				3F6A673A70974C8D4249490300152068 /* ECDSA */,
-				6A128AD71CF4CE86DD73A899C32FDCB6 /* Ed25519 */,
-				E42AFAB59A087BEC831BFD98F93D2FB1 /* EdDSA */,
-				BF777CBFE2DEDA8E37AC43626DDC6DE7 /* HDDerivation */,
-				587A96601E939CAB18EFD1976FEAB8FC /* Key */,
-				9D981544C372ADC10E5A7E8DC68BE0AE /* Signature */,
-			);
-			name = Crypto;
-			path = WalletLibCrypto/Crypto;
-			sourceTree = "<group>";
-		};
-		3B203DD39197E7DFA0CF4D2E000F8474 /* WalletLibCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				FCB4B12891A5A9D694EDA64A7BB00D3B /* WalletLibCrypto.h */,
-				2431B09689D5949B593C4AD65C4F9737 /* Crypto */,
-				1408673AEB59C3D4906162B315F54D8D /* Encoding */,
-				D62B61C088E8304F5606162E133AB692 /* Extensions */,
-				F8D9D4A8C7DDE2E319771121CA97EAD2 /* Frameworks */,
-				83C8F386CCEAFB7AE8213F8B4A6AF8FC /* Hash */,
-				CAFD02CA212B9B0F5D3DC812E623074D /* HexConverter */,
-				3D579768A234C6D98AB23764E7C1E5AF /* Pod */,
-				A34189714CB578F13CC68503E101E476 /* PrivateHeaders */,
-				47CFE1026B25FD114A2C18C86BAFA67C /* Support Files */,
-			);
-			name = WalletLibCrypto;
-			path = ../Submodule/WalletLibCrypto;
-			sourceTree = "<group>";
-		};
-		3D579768A234C6D98AB23764E7C1E5AF /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3153C7CF9BDC7DEB15D68A223FE5F85C /* LICENSE */,
-				9E7FE0746A1C6EA1F757E28470915031 /* README.md */,
-				6B29B3101E9DF588FA41E0DE044A2A86 /* WalletLibCrypto.modulemap */,
-				16AB10B728FC93C8001EED62A6849E3A /* WalletLibCrypto.podspec */,
+				A44460CBD3FFAC981852650AD4E4949A /* LICENSE */,
+				C30EA870CAD815E742312E33E5EB2A85 /* README.md */,
+				82C8A338BE2795BCF4A6EDBDFCD78C6B /* WalletLibCrypto.modulemap */,
+				5BD430910DA7E816D8EA3D87CE1FC844 /* WalletLibCrypto.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		3F6A673A70974C8D4249490300152068 /* ECDSA */ = {
+		311A299FF1CCB3E5CE439ED955F36078 /* Bech32 */ = {
 			isa = PBXGroup;
 			children = (
-				9CD52A213816E4F36F8756841C4FC1F3 /* ECDSA.m */,
+				B5A32DC961DC818B3CCF7C7047D0F334 /* Bech32.m */,
 			);
-			name = ECDSA;
-			path = ECDSA;
+			name = Bech32;
+			path = Bech32;
 			sourceTree = "<group>";
 		};
-		47CFE1026B25FD114A2C18C86BAFA67C /* Support Files */ = {
+		380691AAF44E1C08C217C431958DF6BE /* Signature */ = {
 			isa = PBXGroup;
 			children = (
-				C9BD1C178460943E0F0C9FED50F7AA1A /* WalletLibCrypto.modulemap */,
-				B22E09F56111CDF942F86FBF2204CB1E /* WalletLibCrypto-dummy.m */,
-				2819FE9E5F9707CBE3BEEE20F0432018 /* WalletLibCrypto-Info.plist */,
-				DFE5CAEEA53D7101A7F5391781F4D319 /* WalletLibCrypto-prefix.pch */,
-				1CD726FFC514F55B684E5CB2AC8A0292 /* WalletLibCrypto.debug.xcconfig */,
-				DB382B875C238FB21007B3996FF4F00E /* WalletLibCrypto.release.xcconfig */,
+				EAFE895BE89F3C1334814604AD73D5B6 /* SignatureECDSA.swift */,
+				03B34BE70864115EC4204BDA317D4946 /* SignatureEdDSA.swift */,
 			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/WalletLibCrypto";
+			name = Signature;
+			path = Signature;
 			sourceTree = "<group>";
 		};
-		4C2E08AEDBB7F2BB994912C0F7EBA6D9 /* Curve */ = {
+		4A8E136F569BA7D3408FB51414283706 /* Numeric */ = {
 			isa = PBXGroup;
 			children = (
-				CDFC197CB3E1A48605971865012927D0 /* Curve.m */,
+				34614802696D802D1687A5DFCB1F26B7 /* Numeric+Data.swift */,
 			);
-			name = Curve;
-			path = Curve;
+			name = Numeric;
+			path = Numeric;
+			sourceTree = "<group>";
+		};
+		507DB1535C41FBEB6007F848085440A7 /* HexConverter */ = {
+			isa = PBXGroup;
+			children = (
+				334BC53AD5B9800ABD5B66712AB86800 /* HexConverter.m */,
+			);
+			name = HexConverter;
+			path = WalletLibCrypto/HexConverter;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -401,14 +385,31 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		587A96601E939CAB18EFD1976FEAB8FC /* Key */ = {
+		58794B525F1171FF61ADAC653F61113F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7E6D23747F798760189CB6706B94C357 /* KeyEd25519.m */,
-				57A363FDDAFE3AAC627FEE252E34FB3B /* KeySecp256k1.m */,
+				0061CB4F45FA974BF18BEDDCDAD4CCC8 /* WalletLibCrypto.modulemap */,
+				C549012442E5B857E62FF7DF7AE2BAB4 /* WalletLibCrypto-dummy.m */,
+				3471C5A8FB7796F9F15DF6A5CB56FBC0 /* WalletLibCrypto-Info.plist */,
+				D7EE3DC79D17B3CD180C66C35DEC671D /* WalletLibCrypto-prefix.pch */,
+				CD0A1EA726C0031F3634830659B15002 /* WalletLibCrypto.debug.xcconfig */,
+				FB5ED0E8EE9B1B012872C01A2B95EAB9 /* WalletLibCrypto.release.xcconfig */,
 			);
-			name = Key;
-			path = Key;
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/WalletLibCrypto";
+			sourceTree = "<group>";
+		};
+		5CE2D03AF913E35564965C48DACEDCAE /* String */ = {
+			isa = PBXGroup;
+			children = (
+				6E027ECD0DBA6F8ED205B73992546F58 /* String+Base58.swift */,
+				E1454298940C9D102A93ABC29436C6B7 /* String+Components.swift */,
+				169269846C2630A537767F85CC7DEB08 /* String+Data.swift */,
+				1F5C4D93A3141C83744CAD4A15271517 /* String+Hash.swift */,
+				3D965C952BC729F253ADB05186B73052 /* String+Type.swift */,
+			);
+			name = String;
+			path = String;
 			sourceTree = "<group>";
 		};
 		5EB35F2A57A332C28C3BE998E3C04F9F /* Products */ = {
@@ -422,113 +423,62 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		601E0AE9B2E6807B8FA263B6C61A7F32 /* Keccak */ = {
+		824ECC3D04B9856570D7088BE22A81F6 /* Keccak */ = {
 			isa = PBXGroup;
 			children = (
-				1E5E36083319013D8623FD301339649D /* keccak-tiny.c */,
+				65B372BD8DBFFB204225A8B4C2B59D88 /* keccak-tiny.c */,
 			);
 			name = Keccak;
 			path = Keccak;
 			sourceTree = "<group>";
 		};
-		6A128AD71CF4CE86DD73A899C32FDCB6 /* Ed25519 */ = {
+		8CAFFA10BBAF55988D4D21938076A148 /* Hash */ = {
 			isa = PBXGroup;
 			children = (
-				2BFD002BFDB78C60D0C64EA7A181922A /* ed25519.c */,
-			);
-			name = Ed25519;
-			path = Ed25519;
-			sourceTree = "<group>";
-		};
-		73E94A804BA929B83614FF9513904108 /* Blake2b */ = {
-			isa = PBXGroup;
-			children = (
-				5ECC4ADBC3DC295989405E36341C3391 /* blake2b.c */,
-			);
-			name = Blake2b;
-			path = Blake2b;
-			sourceTree = "<group>";
-		};
-		83C8F386CCEAFB7AE8213F8B4A6AF8FC /* Hash */ = {
-			isa = PBXGroup;
-			children = (
-				3AA1EB388B2FEC67D5A099CBEBA6AEB7 /* Hash.m */,
-				73E94A804BA929B83614FF9513904108 /* Blake2b */,
-				601E0AE9B2E6807B8FA263B6C61A7F32 /* Keccak */,
+				4351082F5FBA43E07ED42B8C5E9A0360 /* Hash.m */,
+				C2EC4043FAA753EFC58160DE73E1DFEE /* Blake2b */,
+				824ECC3D04B9856570D7088BE22A81F6 /* Keccak */,
 			);
 			name = Hash;
 			path = WalletLibCrypto/Hash;
 			sourceTree = "<group>";
 		};
-		9D981544C372ADC10E5A7E8DC68BE0AE /* Signature */ = {
+		A50016106BFBE08B59F10C129812EBC9 /* Base58 */ = {
 			isa = PBXGroup;
 			children = (
-				A28C6C5C082085F5B53BE3C95869B1CE /* SignatureECDSA.swift */,
-				214F38CE63CF9291A655FB667F563149 /* SignatureEdDSA.swift */,
+				09743845E464ECCC5206852DA241DEC6 /* Base58.m */,
 			);
-			name = Signature;
-			path = Signature;
+			name = Base58;
+			path = Base58;
 			sourceTree = "<group>";
 		};
-		A34189714CB578F13CC68503E101E476 /* PrivateHeaders */ = {
+		BA1740839966CAC2D43E9B62B1D132EC /* EdDSA */ = {
 			isa = PBXGroup;
 			children = (
-				CAAF03D9ED84445EC53D5B66336D8B5F /* Base58.h */,
-				A78D323E38E3EB3ABEBDFEAD7411C691 /* Bech32.h */,
-				809A0C50E56C72F4D9E384F478D328FF /* Bignum.h */,
-				7FCE45263D637EDD314DD4657CEF04B2 /* blake2b.h */,
-				5E48B6414D01EFA0AD59526F766E392E /* Curve.h */,
-				F78202CE63C87A9301EE4C909E861999 /* curve25519-donna-32bit.h */,
-				DF25239920006541421B7BF4A8B2DF71 /* curve25519-donna-64bit.h */,
-				7C04FF0C5EDECE0ACA9316AEEFED122D /* curve25519-donna-helpers.h */,
-				B08FA774BE99FEF0DD068B09C258A26E /* ECDSA.h */,
-				98955236A0E54DE6F344C7D2947C062A /* ed25519.h */,
-				B49C087E5002183B3333A36E45772FAB /* ed25519-donna.h */,
-				16B00D7116C45EBC600673A2BCB7FF6A /* ed25519-donna-32bit-tables.h */,
-				798034442F1ACB74C2F250EC8B7E7C45 /* ed25519-donna-64bit-tables.h */,
-				BBE78CFCB9007B4F488CE5B79B7E7058 /* ed25519-donna-64bit-x86.h */,
-				FD831666816C0D4909D8F7E744193BBA /* ed25519-donna-64bit-x86-32bit.h */,
-				7877C10EA90975C197BB5312A3EDD44C /* ed25519-donna-basepoint-table.h */,
-				A107029501E5B385873D95F1EFD12331 /* ed25519-donna-batchverify.h */,
-				3CE1CAD2B436D966329FAEBF7391DED3 /* ed25519-donna-impl-base.h */,
-				D8B01C506F8E1C1C1ABC76F21EA3AF35 /* ed25519-donna-portable.h */,
-				78C16ECC5C547E0FE7B8E97BE90BF794 /* ed25519-donna-portable-identify.h */,
-				0DFE5193D6C5A32FDF3D487A96261FCF /* ed25519-hash.h */,
-				44E8F8BA275DAA91A6D148265D9A391A /* EdDSA.h */,
-				294E8D059B7D95D9F046974BE43A5EE0 /* Hash.h */,
-				9D8A85A4DBD71B8A78F7E2F8CD24650B /* HexConverter.h */,
-				8012ACDF8A5C47D76E666B7A56F7F8C0 /* keccak-tiny.h */,
-				BBCBD61C91D8041B0A12A32D11DE6297 /* KeyEd25519.h */,
-				3BF5A576FD6A43B34B5AD2141A14C430 /* KeySecp256k1.h */,
-				DD3700E0BF157DAFA17C5C266C58350A /* KeyType.h */,
-				E370353664928190460E9503DB9EE69F /* modm-donna-32bit.h */,
-				2C997B3D966E120D6DF9994441FB8590 /* modm-donna-64bit.h */,
-				8CC11774351A14F8743AB1E291A73768 /* sign.h */,
+				18DA9694773AB6447D4648D153545802 /* EdDSA.m */,
+				DBBB62E23AD2233E19DCA8277ACB7931 /* TweetNacl.c */,
 			);
-			name = PrivateHeaders;
-			path = WalletLibCrypto/PrivateHeaders;
+			name = EdDSA;
+			path = EdDSA;
 			sourceTree = "<group>";
 		};
-		B7234F29A3BF5B7934D41FFA5BE69079 /* Data */ = {
+		BCB6850AD62E52CB8310491B07CBAC4E /* Encoding */ = {
 			isa = PBXGroup;
 			children = (
-				D6CA6805549C3C542D74030993CDE717 /* Data+Base58.swift */,
-				511CD6E72D463C86DCA20C814B785792 /* Data+Hash.swift */,
-				413006F7A8A09DB38150B5702AC23313 /* Data+HEX.swift */,
-				15233EB82BDE0E877BBD4064981D2A20 /* Data+Type.swift */,
+				A50016106BFBE08B59F10C129812EBC9 /* Base58 */,
+				311A299FF1CCB3E5CE439ED955F36078 /* Bech32 */,
 			);
-			name = Data;
-			path = Data;
+			name = Encoding;
+			path = WalletLibCrypto/Encoding;
 			sourceTree = "<group>";
 		};
-		BF777CBFE2DEDA8E37AC43626DDC6DE7 /* HDDerivation */ = {
+		BEAE64CBBFFBB4C47E9DBA9DB646CB3C /* Curve */ = {
 			isa = PBXGroup;
 			children = (
-				65BE33530E06A01D66DF11147D1CA025 /* HDDerivation.swift */,
-				F7E1ACF5245701FDCCA05A06DA25ED23 /* HDDerivationEd25519.swift */,
+				C70D725DBABBE78E1F85251F9E02791A /* Curve.m */,
 			);
-			name = HDDerivation;
-			path = HDDerivation;
+			name = Curve;
+			path = Curve;
 			sourceTree = "<group>";
 		};
 		C180E105C9A2988A18867D97186BA5A6 /* Pod */ = {
@@ -541,13 +491,21 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		CAFD02CA212B9B0F5D3DC812E623074D /* HexConverter */ = {
+		C2EC4043FAA753EFC58160DE73E1DFEE /* Blake2b */ = {
 			isa = PBXGroup;
 			children = (
-				A553B2C44D5DA2F32EA45D91484F0482 /* HexConverter.m */,
+				26C3FB0CAD4AFB5DCD4F969F88ADA330 /* blake2b.c */,
 			);
-			name = HexConverter;
-			path = WalletLibCrypto/HexConverter;
+			name = Blake2b;
+			path = Blake2b;
+			sourceTree = "<group>";
+		};
+		C3EBCBA2A08AB338AF8A8A416E544DCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFF8F98F57FD19B3EB2AF66B085FC7E8 /* libcrypto-ios.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -564,7 +522,7 @@
 		D06634468B9AA7CEB35D89AA366B8169 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B203DD39197E7DFA0CF4D2E000F8474 /* WalletLibCrypto */,
+				FA60BC81C37789BDE1525176400E3BB5 /* WalletLibCrypto */,
 				07A16973155D364CEB9CE2443D5A1A40 /* WalletLibRLP */,
 			);
 			name = "Development Pods";
@@ -578,13 +536,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D322DF4FEAD03CDED5B08E8B29E865DE /* Bech32 */ = {
+		D2C82165D7AF460CBDEE63C2FD217016 /* ECDSA */ = {
 			isa = PBXGroup;
 			children = (
-				F5CDEC34C9A8DB74C06F428BB8066D93 /* Bech32.m */,
+				392F938E5F186C396932B0B890C51F7C /* ECDSA.m */,
 			);
-			name = Bech32;
-			path = Bech32;
+			name = ECDSA;
+			path = ECDSA;
+			sourceTree = "<group>";
+		};
+		D39CCA4789DE6DE963A1FAF9EEF2F3E2 /* Bignum */ = {
+			isa = PBXGroup;
+			children = (
+				227B3A932088840CE666C5C7FEEACEEE /* Bignum.m */,
+			);
+			name = Bignum;
+			path = Bignum;
 			sourceTree = "<group>";
 		};
 		D628BF9E3963AA2EAA933221F8D14B71 /* Support Files */ = {
@@ -602,29 +569,32 @@
 			path = "../../Pods/Target Support Files/WalletLibRLP";
 			sourceTree = "<group>";
 		};
-		D62B61C088E8304F5606162E133AB692 /* Extensions */ = {
+		D9621E9FAC45F2D0015F4B9F1A333AB3 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				B7234F29A3BF5B7934D41FFA5BE69079 /* Data */,
-				FE9D46029D42A3BCF4087B9AA6ED8147 /* Numeric */,
-				F9629490FA54DFE1FD2F985E7CEC59DF /* Protocols */,
-				DCE4ED6FC6AE45AC9C973C4BBECAD472 /* String */,
+				D39CCA4789DE6DE963A1FAF9EEF2F3E2 /* Bignum */,
+				BEAE64CBBFFBB4C47E9DBA9DB646CB3C /* Curve */,
+				D2C82165D7AF460CBDEE63C2FD217016 /* ECDSA */,
+				FD479CAE13F7DC137F5199F8439A6894 /* Ed25519 */,
+				BA1740839966CAC2D43E9B62B1D132EC /* EdDSA */,
+				EEC3148E92011574DFE131DC1D506235 /* HDDerivation */,
+				1798274EF350A939321C36CFB9685CA4 /* Key */,
+				380691AAF44E1C08C217C431958DF6BE /* Signature */,
 			);
-			name = Extensions;
-			path = WalletLibCrypto/Extensions;
+			name = Crypto;
+			path = WalletLibCrypto/Crypto;
 			sourceTree = "<group>";
 		};
-		DCE4ED6FC6AE45AC9C973C4BBECAD472 /* String */ = {
+		DA1D2DF3F25190D381689580EAB6FFB7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4C62DDF7F2ACB1550AF3F5064D095F7E /* String+Base58.swift */,
-				3E12D8E97F3FC47DEFE559C05285269F /* String+Components.swift */,
-				6C6FF9BEAF89A7B3874A5DC04C1EB4B7 /* String+Data.swift */,
-				437E8BC629556B2DF2A457DFB8460035 /* String+Hash.swift */,
-				574329CC1660E69F0F3BA31BDDDFFCE1 /* String+Type.swift */,
+				AB517B62658EFCE8EFDA31262D053AF8 /* Data+Base58.swift */,
+				422E424AFF70FB9B5DE5F0E66276F03D /* Data+Hash.swift */,
+				94E3CFC40FB9A60241E610D835309D92 /* Data+HEX.swift */,
+				AC4CB63EFA31DD02F253A7845FE3048B /* Data+Type.swift */,
 			);
-			name = String;
-			path = String;
+			name = Data;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		DD36A2BF7527BF4DE72C34158277FA40 /* Targets Support Files */ = {
@@ -636,106 +606,143 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E2C97AFE78CB637AF0571E6CD5435C9E /* Base58 */ = {
+		E6F3E7AA0E4ADAB0A17F961AB45933A0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9315B7F4BC799091820481EB0367E95B /* Base58.m */,
+				DA1D2DF3F25190D381689580EAB6FFB7 /* Data */,
+				4A8E136F569BA7D3408FB51414283706 /* Numeric */,
+				0BF518BAB9CBF0679166329178D1B13A /* Protocols */,
+				5CE2D03AF913E35564965C48DACEDCAE /* String */,
 			);
-			name = Base58;
-			path = Base58;
+			name = Extensions;
+			path = WalletLibCrypto/Extensions;
 			sourceTree = "<group>";
 		};
-		E42AFAB59A087BEC831BFD98F93D2FB1 /* EdDSA */ = {
+		EEC3148E92011574DFE131DC1D506235 /* HDDerivation */ = {
 			isa = PBXGroup;
 			children = (
-				32E137F6E9D848290BF7EAAB2468474D /* EdDSA.m */,
+				D6E45C73A0896F020A220AD0F64D3194 /* HDDerivation.swift */,
+				DD52AAF6FBF5B185BEFA535090BB48AD /* HDDerivationEd25519.swift */,
 			);
-			name = EdDSA;
-			path = EdDSA;
+			name = HDDerivation;
+			path = HDDerivation;
 			sourceTree = "<group>";
 		};
-		E7C1FFAD1546B4C12F0CB3F5054EAF82 /* Bignum */ = {
+		F2BB2CCAAAC9D2D973EFA242F24B2AB1 /* PrivateHeaders */ = {
 			isa = PBXGroup;
 			children = (
-				1C7494232390DDF9C9D89831AE9416DE /* Bignum.m */,
+				6CDDF556FEEEA7E3E660A3B712DDDBF6 /* Base58.h */,
+				83772363B283890770FE540E78423A9F /* Bech32.h */,
+				02A639B1E94E8B791BA5AC64F359456E /* Bignum.h */,
+				21F474DABA61F3F014FA68F0EEAED40D /* blake2b.h */,
+				3C4AA2590CAD4C7A12040C6D87C392A4 /* Curve.h */,
+				6C7078F97380608C4EBE0D9EB11B49D4 /* curve25519-donna-32bit.h */,
+				A67A944C59A11C61902BB0C5EA228D6E /* curve25519-donna-64bit.h */,
+				18603B192610F0433EDEF55A42480FF5 /* curve25519-donna-helpers.h */,
+				586CD44B5DD4342F0AD4624FC2BE1060 /* ECDSA.h */,
+				B19FE4E64F63B98A395CDA195E031EDB /* ed25519.h */,
+				06E75CDE0EEB13E0E164F7252F0AF2FC /* ed25519-donna.h */,
+				612D39CE2E21AE1FBEE1DD2F50218867 /* ed25519-donna-32bit-tables.h */,
+				DB73E30601E80553A2DC6A1D398AA96F /* ed25519-donna-64bit-tables.h */,
+				29E19897A921DED8CEA94485EC54169C /* ed25519-donna-64bit-x86.h */,
+				F1DB1B64149C64EA0E18D2CA44AB8A6A /* ed25519-donna-64bit-x86-32bit.h */,
+				41190C24D455348F0E78B4F2161DA956 /* ed25519-donna-basepoint-table.h */,
+				FD479938D35F4D40476126ECFE1634F1 /* ed25519-donna-batchverify.h */,
+				F60C1B2EAE8E4BCDDACEFCB40B9BA2D8 /* ed25519-donna-impl-base.h */,
+				AF1BB0911DB5501C702C6CA8A8B53282 /* ed25519-donna-portable.h */,
+				B3B6ABDD22789FF8853CB1DB6A561F29 /* ed25519-donna-portable-identify.h */,
+				997BF3410FD5F007E02DEA544D746E7F /* ed25519-hash.h */,
+				3EE99B83B23E6A740A47AA71A14EE9E1 /* EdDSA.h */,
+				FCC97B7B61E46FA473BA56CC054DF717 /* Hash.h */,
+				93A27479AA31837D63346837DA6C90D1 /* HexConverter.h */,
+				D5534F461F8D71C8019C47B4382C5E5F /* keccak-tiny.h */,
+				2D1A014E0D74FEF437B57C0DA7CB3A6E /* KeyEd25519.h */,
+				1DA50CFFF2DA24E8D79E1D606CFE8952 /* KeySecp256k1.h */,
+				BAF50277B72E67EFDE80984ACBDD0D4C /* KeyType.h */,
+				9372984CB324C1411F1488FC29A2F1E5 /* modm-donna-32bit.h */,
+				17E2362081399F6A1C7B37B74F8A71BB /* modm-donna-64bit.h */,
+				2DCE7A541DF1FD3CEAAA3CC8FC7B271E /* sign.h */,
+				D9F29A9CF0BDD556094295C4E110B42E /* TweetNacl.h */,
 			);
-			name = Bignum;
-			path = Bignum;
+			name = PrivateHeaders;
+			path = WalletLibCrypto/PrivateHeaders;
 			sourceTree = "<group>";
 		};
-		F8D9D4A8C7DDE2E319771121CA97EAD2 /* Frameworks */ = {
+		FA60BC81C37789BDE1525176400E3BB5 /* WalletLibCrypto */ = {
 			isa = PBXGroup;
 			children = (
-				67CB7BF6ACFAFF088C477157C0F13700 /* libcrypto-ios.a */,
+				4A216CC690FF1C0126B6441DB02608BB /* WalletLibCrypto.h */,
+				D9621E9FAC45F2D0015F4B9F1A333AB3 /* Crypto */,
+				BCB6850AD62E52CB8310491B07CBAC4E /* Encoding */,
+				E6F3E7AA0E4ADAB0A17F961AB45933A0 /* Extensions */,
+				C3EBCBA2A08AB338AF8A8A416E544DCF /* Frameworks */,
+				8CAFFA10BBAF55988D4D21938076A148 /* Hash */,
+				507DB1535C41FBEB6007F848085440A7 /* HexConverter */,
+				25B39EAA4F4B6079EF8FE62D43DB1B16 /* Pod */,
+				F2BB2CCAAAC9D2D973EFA242F24B2AB1 /* PrivateHeaders */,
+				58794B525F1171FF61ADAC653F61113F /* Support Files */,
 			);
-			name = Frameworks;
+			name = WalletLibCrypto;
+			path = ../Submodule/WalletLibCrypto;
 			sourceTree = "<group>";
 		};
-		F9629490FA54DFE1FD2F985E7CEC59DF /* Protocols */ = {
+		FD479CAE13F7DC137F5199F8439A6894 /* Ed25519 */ = {
 			isa = PBXGroup;
 			children = (
-				8D5A28E573CAF7896F0F55F2C4C9817F /* DataConvertibleProtocol.swift */,
+				EB01C8909FF2E842BF2B6388C50E1357 /* ed25519.c */,
 			);
-			name = Protocols;
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FE9D46029D42A3BCF4087B9AA6ED8147 /* Numeric */ = {
-			isa = PBXGroup;
-			children = (
-				3E568CF981AB4DBDC621B56D428AEF92 /* Numeric+Data.swift */,
-			);
-			name = Numeric;
-			path = Numeric;
+			name = Ed25519;
+			path = Ed25519;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		38F36F18F06FEDD0F87E07E3A27929A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B418E6E50615382CD7686C808F1D4266 /* Base58.h in Headers */,
+				DDB389041D536805B948E4AFE7A4344C /* Bech32.h in Headers */,
+				AD95AAF14C875E804FD08D7EEE8AA1A6 /* Bignum.h in Headers */,
+				C5A7BA1C68BDF771F663856379B598BE /* blake2b.h in Headers */,
+				F8C3274375B1092A9E3FAFD6BDAD5D9D /* Curve.h in Headers */,
+				D911A6CA54F51336C33983219C6909CA /* curve25519-donna-32bit.h in Headers */,
+				7559FFFB7AF8AB165881A9E2D2CFA15F /* curve25519-donna-64bit.h in Headers */,
+				82E05B2917D283616CBF6A2D438542A3 /* curve25519-donna-helpers.h in Headers */,
+				347EB24F374F0B89092B938041AC98ED /* ECDSA.h in Headers */,
+				4E33DB8BE992AACB0C7AD9B5FA567E5E /* ed25519.h in Headers */,
+				F87332105365CF7F1E5FF289BE721C2E /* ed25519-donna.h in Headers */,
+				D8075B52C4E32FB5868E7A0AC12C9E73 /* ed25519-donna-32bit-tables.h in Headers */,
+				D2C17383DF841CEBFEEFD9FAD3EC54E0 /* ed25519-donna-64bit-tables.h in Headers */,
+				C14161FEBD217B7FC1B2A211D3F18DFE /* ed25519-donna-64bit-x86.h in Headers */,
+				D87D8260A750B77C2421701D2A680C48 /* ed25519-donna-64bit-x86-32bit.h in Headers */,
+				D6A5E32075742C8125191125FFD5E9B3 /* ed25519-donna-basepoint-table.h in Headers */,
+				EFD9FB6D65E52F0425858EBBB7660086 /* ed25519-donna-batchverify.h in Headers */,
+				869853B1B9854E8C753F30B446DBEDDA /* ed25519-donna-impl-base.h in Headers */,
+				439489EFA3B672635A563A2F067D58A5 /* ed25519-donna-portable.h in Headers */,
+				F8456B816B492DB3FD06C7C27CB2C75C /* ed25519-donna-portable-identify.h in Headers */,
+				EAB9C758B359CF99FAC8B308DA304288 /* ed25519-hash.h in Headers */,
+				9B35437FAB53BFA21EDBA2ABE27E67E6 /* EdDSA.h in Headers */,
+				096B12B8BF35084277F49B3266AFC7F3 /* Hash.h in Headers */,
+				3B26249993E503B9F11BC8154417ADEF /* HexConverter.h in Headers */,
+				82EFC9149AFC065B08A44C495189F9C2 /* keccak-tiny.h in Headers */,
+				CF930147471D65170B5E307811470AF4 /* KeyEd25519.h in Headers */,
+				D1C60C4DB6B24984508418B92D9FD074 /* KeySecp256k1.h in Headers */,
+				1795A987C0D81DA51194EBB7AED9DB69 /* KeyType.h in Headers */,
+				95A6F2BCC01DC0CCCA0F6D6D4B74DAB3 /* modm-donna-32bit.h in Headers */,
+				5F05C29247B4287CB01DF3DC95415AE8 /* modm-donna-64bit.h in Headers */,
+				657D495EE8919F61415262BDEA995630 /* sign.h in Headers */,
+				60453BBE7A6B7A6A49902E1C1D144194 /* TweetNacl.h in Headers */,
+				C631CE71951AB55B7A0EB94F5C68134C /* WalletLibCrypto.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E46416C61381A16B44431A2C9ADF5CB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A22CF9DD7D02314C29665F706BC68A58 /* Pods-WalletLibEthereum-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4319C7283AF1A5DB259A3C88E3FF1359 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				945C2AAB6A2B65EB8D3011D2FC5CADFF /* Base58.h in Headers */,
-				0EB73914B46F87DF19EE3A9095123E4D /* Bech32.h in Headers */,
-				3E46528E16DFBEABE5FBA82A3FA4CE34 /* Bignum.h in Headers */,
-				814B1C78D0801C1D9F4BF0BF8C55C96C /* blake2b.h in Headers */,
-				0E4883EAB8F1674C9720A46B232F1DB9 /* Curve.h in Headers */,
-				0D36CD591E850FEACC9BAF275CD10386 /* curve25519-donna-32bit.h in Headers */,
-				CB22D57CE581845B3F7275B20DB0058A /* curve25519-donna-64bit.h in Headers */,
-				C790330CAA75A0B87D5ABCE023822A93 /* curve25519-donna-helpers.h in Headers */,
-				0D2ED62BC07CE33C781A869F37867617 /* ECDSA.h in Headers */,
-				19B581A7DFDE1BFB2B85CB63273F1BE6 /* ed25519.h in Headers */,
-				CF9D331971356C208791BA9C56A70573 /* ed25519-donna.h in Headers */,
-				83459079088C92CC1466039BC57F4F82 /* ed25519-donna-32bit-tables.h in Headers */,
-				87D2FD70C2B4486C5D9B8D7980FCE934 /* ed25519-donna-64bit-tables.h in Headers */,
-				238A39A765EB653554C01CE77F44CC27 /* ed25519-donna-64bit-x86.h in Headers */,
-				7D0404B935FAFD501B67CA51B7F8B36C /* ed25519-donna-64bit-x86-32bit.h in Headers */,
-				FDE4E8A772F98210657B9FEA05E11B57 /* ed25519-donna-basepoint-table.h in Headers */,
-				7158436831544F0196F3F8FDC45FE2FF /* ed25519-donna-batchverify.h in Headers */,
-				8E19FCF49158DD95D5CF08B5D1E948DE /* ed25519-donna-impl-base.h in Headers */,
-				6C77E2E6544695B664C4C44BDB4C5B8F /* ed25519-donna-portable.h in Headers */,
-				EAE001AB978BF70725642D78CE9134B0 /* ed25519-donna-portable-identify.h in Headers */,
-				A40E5F493D2D86E766465E231B36B8BF /* ed25519-hash.h in Headers */,
-				6EDA5D5FE0A2FA4CD65D56709FB43430 /* EdDSA.h in Headers */,
-				52581C9A41E77ECBA4F51B4E39FFEDE9 /* Hash.h in Headers */,
-				16E76AFFF72CB6FC201C132D105CD766 /* HexConverter.h in Headers */,
-				D38D1D0C46C97609D21B3D216026CB38 /* keccak-tiny.h in Headers */,
-				3FF89D2CC6D59A799501B72BAA5058F4 /* KeyEd25519.h in Headers */,
-				5BA9460C92E13821B49AEF7460217965 /* KeySecp256k1.h in Headers */,
-				B7FD698B4B529B013BB6D8AB526BFEB4 /* KeyType.h in Headers */,
-				0F1CD7DF566EEC7355F5ED3DBCFFF18A /* modm-donna-32bit.h in Headers */,
-				B0FBF89FA285B3B40C81EAFD65D71A9D /* modm-donna-64bit.h in Headers */,
-				5EC054D3B7FF5E21A9EE707E98EA804F /* sign.h in Headers */,
-				2806B316A785920FFC2235E61AE4D214 /* WalletLibCrypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,8 +795,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				82C8D1B90A272A7E6410FB1C7B9BA2AE /* PBXTargetDependency */,
-				E1353F2AB87A735101FB495A969B506D /* PBXTargetDependency */,
+				7DD9B1D3C6046F7F31A8176E8C1CAF6E /* PBXTargetDependency */,
+				4528BBD780C0B0DA30A08C511BF3BB99 /* PBXTargetDependency */,
 			);
 			name = "Pods-WalletLibEthereum";
 			productName = Pods_WalletLibEthereum;
@@ -808,8 +815,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				FF59F1CA87468C1DF8D2F8CD2957771F /* PBXTargetDependency */,
-				37F1FB8CFBEBDC8778ABB22E5932DDE0 /* PBXTargetDependency */,
+				E7AD6ED7172C4E97C0969F3D7A764628 /* PBXTargetDependency */,
+				8892C6212B9577F3151382D204F128A3 /* PBXTargetDependency */,
 			);
 			name = "Pods-WalletLibEthereum-WalletLibEthereumTests";
 			productName = Pods_WalletLibEthereum_WalletLibEthereumTests;
@@ -818,12 +825,12 @@
 		};
 		E70CDF92FD14D97B23CF9496990BDE05 /* WalletLibCrypto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C774D65A7C2ABE8E9DA2FAC07728589 /* Build configuration list for PBXNativeTarget "WalletLibCrypto" */;
+			buildConfigurationList = 9EE575C41752A555A0CC868BE3731F6E /* Build configuration list for PBXNativeTarget "WalletLibCrypto" */;
 			buildPhases = (
-				4319C7283AF1A5DB259A3C88E3FF1359 /* Headers */,
-				60621F239E610FD6DAA375F0A79DA701 /* Sources */,
-				23F3B2629A65B4B75B5D1E916DED0253 /* Frameworks */,
-				0FEEFDC19A9729DD4EA952D996725B0A /* Resources */,
+				38F36F18F06FEDD0F87E07E3A27929A5 /* Headers */,
+				2CC3487DE6907033365F0F49728F6781 /* Sources */,
+				DC3870F9A6B49F1B2E2CB982FB917957 /* Frameworks */,
+				A1AE4962AFB6E91280128FCFDAE2222F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -840,8 +847,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -865,13 +872,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0FEEFDC19A9729DD4EA952D996725B0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2CA9B219EE17DFDF27EA6FA1695E7FC9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -880,6 +880,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5C57A50230CBE8E9D146704B1BB35601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1AE4962AFB6E91280128FCFDAE2222F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -896,6 +903,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2CC3487DE6907033365F0F49728F6781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9DC35342DF6735D28527D58350D1F2 /* Base58.m in Sources */,
+				3E2FC7A6ED122E8ABD4C7414FFB0B300 /* Bech32.m in Sources */,
+				F67477B15790CBBFDA94DF2C40110B97 /* Bignum.m in Sources */,
+				E4F6D3575D4604A026D5508638EE4867 /* blake2b.c in Sources */,
+				0569C393B5306C19CB99DCDC41152B23 /* Curve.m in Sources */,
+				FEF9F5B563AAD9B2145616C0E49D21BA /* Data+Base58.swift in Sources */,
+				EC5C6403FABA6E259DF62C1D1B54D9ED /* Data+Hash.swift in Sources */,
+				7B072C03AA6CFB03D1A55368C5804575 /* Data+HEX.swift in Sources */,
+				EF5DA35415DE8628EC45934B526CEE50 /* Data+Type.swift in Sources */,
+				66694E8585456BC80396C1FF6ACBCE0C /* DataConvertibleProtocol.swift in Sources */,
+				ADEB19FF6D948E1B910FF3B1A1D381B4 /* ECDSA.m in Sources */,
+				A006EBDF1DB2E75BCFCCBC67B41744B0 /* ed25519.c in Sources */,
+				923AB66DE5CCADA459388924EE19A217 /* EdDSA.m in Sources */,
+				B58E8921C21267C79A1198027FD5626C /* Hash.m in Sources */,
+				32AC0F05B89AC7C987DD42DC60B0FB55 /* HDDerivation.swift in Sources */,
+				2A6893477A9ACFC22B3FC0E38B2900C3 /* HDDerivationEd25519.swift in Sources */,
+				5CC77CBF6AA181BFC00C10EFB6976F85 /* HexConverter.m in Sources */,
+				172E95458F31CE926F69C679D3C9C8F8 /* keccak-tiny.c in Sources */,
+				34383F1B85BDC460A820E3E8224AC6FA /* KeyEd25519.m in Sources */,
+				D500D3A042685A9AAC3334AB87601719 /* KeySecp256k1.m in Sources */,
+				429D3E73183EDC601C02901487B0DA68 /* Numeric+Data.swift in Sources */,
+				3AC1B4848A8D7633EDF00BF01A831959 /* SignatureECDSA.swift in Sources */,
+				6A21D6BBA5B464A501BE1421FE9BC663 /* SignatureEdDSA.swift in Sources */,
+				F89B520CEBE45AB6079868177FC5E66D /* String+Base58.swift in Sources */,
+				6D04F14112025F0C1A830C6CF7DA6BA1 /* String+Components.swift in Sources */,
+				71E86D88F883206AC4EAC9E5810DEBE3 /* String+Data.swift in Sources */,
+				1582DF0F00DD26B3190CFE5E84B05F41 /* String+Hash.swift in Sources */,
+				17823E5F2BDE4C87AE0BBCE980E24B4F /* String+Type.swift in Sources */,
+				818F568EF0E8A51654BC57F6FA12C779 /* TweetNacl.c in Sources */,
+				38656C617AF7055EA9E85073D0D6D6A2 /* WalletLibCrypto-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B183899624EF269522D015CEA8CA6B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -909,42 +953,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C52F10F3FC24C19311A95489343EF95 /* Pods-WalletLibEthereum-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		60621F239E610FD6DAA375F0A79DA701 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F7109EA4BBBB22A35AD2596A6EE1EAB /* Base58.m in Sources */,
-				1CA650462A8ACAE61E91B31D6AB7F022 /* Bech32.m in Sources */,
-				2948B0B549A3C69B05B6DFC0C1EE47C6 /* Bignum.m in Sources */,
-				546587CF6FFCA647589AE74FBE7F11BD /* blake2b.c in Sources */,
-				9FC856E9C0196E9E1D015C53C40ECF28 /* Curve.m in Sources */,
-				5E81BE52585746C09ED2D11F410918BB /* Data+Base58.swift in Sources */,
-				51023FF496527E3FB62AF6321DB0C253 /* Data+Hash.swift in Sources */,
-				9071F5D0BD2D2197DF1B28A841E7843E /* Data+HEX.swift in Sources */,
-				E991C6E35397BB10A8212FBDAF5F9CB3 /* Data+Type.swift in Sources */,
-				4B6EC7BB17B227A9FB5F5EF3AE847445 /* DataConvertibleProtocol.swift in Sources */,
-				CCC8C0D2D86A3C5ECD1682501281AC65 /* ECDSA.m in Sources */,
-				584AB60DA7AEA2AD2B9F27847FE82F72 /* ed25519.c in Sources */,
-				BA09925AC01C098AC18AD21ACA9D9F43 /* EdDSA.m in Sources */,
-				9A33F0A691CF64DFD49E31AFC30BC795 /* Hash.m in Sources */,
-				37604D1F2371B06EE0AD6DDD8197E7B4 /* HDDerivation.swift in Sources */,
-				3E2AA0536523EACEBD9A0646D8F705CD /* HDDerivationEd25519.swift in Sources */,
-				54638EF2349788BBE7C4BA7A612D2864 /* HexConverter.m in Sources */,
-				50B40886D8E2AC894B349DBB49CBBF8D /* keccak-tiny.c in Sources */,
-				CAC9F1C11D4AE81CBE099704708ABD04 /* KeyEd25519.m in Sources */,
-				54817BF73CF2367DD4C34F3D3C1DE424 /* KeySecp256k1.m in Sources */,
-				BEA0F6DC93501E8D275118042FC9322B /* Numeric+Data.swift in Sources */,
-				3C5616AB3CD68568A8687E2514540DF6 /* SignatureECDSA.swift in Sources */,
-				1FE0C170AAAFC612E6834FE37A363C2E /* SignatureEdDSA.swift in Sources */,
-				569A369F7D973FBE4BE264A7D73A521A /* String+Base58.swift in Sources */,
-				44FA53935CF21D948CACCC4FF76B986C /* String+Components.swift in Sources */,
-				05518547BE1B8A62769AD72DDB9F1461 /* String+Data.swift in Sources */,
-				E320599C20397A776D15ACB8317B6B61 /* String+Hash.swift in Sources */,
-				9AD6D7416DC44A622FA3E5A11A347C88 /* String+Type.swift in Sources */,
-				6246A5C90432471AF1550F9AF42C4599 /* WalletLibCrypto-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,69 +970,33 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		37F1FB8CFBEBDC8778ABB22E5932DDE0 /* PBXTargetDependency */ = {
+		4528BBD780C0B0DA30A08C511BF3BB99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WalletLibRLP;
 			target = 9227C38889D81F0F9CBD991E79451324 /* WalletLibRLP */;
-			targetProxy = 6D403940B530CC7484F8318E996AA267 /* PBXContainerItemProxy */;
+			targetProxy = C2779AADF7453035CB6C5EDF9F8F61D2 /* PBXContainerItemProxy */;
 		};
-		82C8D1B90A272A7E6410FB1C7B9BA2AE /* PBXTargetDependency */ = {
+		7DD9B1D3C6046F7F31A8176E8C1CAF6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WalletLibCrypto;
 			target = E70CDF92FD14D97B23CF9496990BDE05 /* WalletLibCrypto */;
-			targetProxy = 972A466DF026BFFBFA9F6F92FF75D63E /* PBXContainerItemProxy */;
+			targetProxy = A3C8D942D207DC939EEFFD2B0C54C27A /* PBXContainerItemProxy */;
 		};
-		E1353F2AB87A735101FB495A969B506D /* PBXTargetDependency */ = {
+		8892C6212B9577F3151382D204F128A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WalletLibRLP;
 			target = 9227C38889D81F0F9CBD991E79451324 /* WalletLibRLP */;
-			targetProxy = B2A1F8391D442D778E4BA3DC36A3E88D /* PBXContainerItemProxy */;
+			targetProxy = 53E4CADC46B45145FFA194FC9F83E6A6 /* PBXContainerItemProxy */;
 		};
-		FF59F1CA87468C1DF8D2F8CD2957771F /* PBXTargetDependency */ = {
+		E7AD6ED7172C4E97C0969F3D7A764628 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WalletLibCrypto;
 			target = E70CDF92FD14D97B23CF9496990BDE05 /* WalletLibCrypto */;
-			targetProxy = 8B0A0BB8CB3D9E1E85ADDD35DF6BF5FA /* PBXContainerItemProxy */;
+			targetProxy = A02618CD2310B64041D6AF486B5A0BC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B2FE5108A91255ECABA6F7259A55EAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CD726FFC514F55B684E5CB2AC8A0292 /* WalletLibCrypto.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WalletLibCrypto/WalletLibCrypto-prefix.pch";
-				GCC_WARN_UNUSED_FUNCTION = NO;
-				INFOPLIST_FILE = "Target Support Files/WalletLibCrypto/WalletLibCrypto-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WalletLibCrypto/WalletLibCrypto.modulemap";
-				PRODUCT_MODULE_NAME = WalletLibCrypto;
-				PRODUCT_NAME = WalletLibCrypto;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1087,43 +1059,6 @@
 			};
 			name = Release;
 		};
-		31D120FB3EEEC47FF6D07E3053AE0D00 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB382B875C238FB21007B3996FF4F00E /* WalletLibCrypto.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WalletLibCrypto/WalletLibCrypto-prefix.pch";
-				GCC_WARN_UNUSED_FUNCTION = NO;
-				INFOPLIST_FILE = "Target Support Files/WalletLibCrypto/WalletLibCrypto-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WalletLibCrypto/WalletLibCrypto.modulemap";
-				PRODUCT_MODULE_NAME = WalletLibCrypto;
-				PRODUCT_NAME = WalletLibCrypto;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3B45AE4B390105B32D973E576C891635 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 430F538305753401584F18B31E422464 /* Pods-WalletLibEthereum.debug.xcconfig */;
@@ -1161,6 +1096,79 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		3DAB220D228BFC3B20C55A6CF3A4A0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0A1EA726C0031F3634830659B15002 /* WalletLibCrypto.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WalletLibCrypto/WalletLibCrypto-prefix.pch";
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				INFOPLIST_FILE = "Target Support Files/WalletLibCrypto/WalletLibCrypto-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WalletLibCrypto/WalletLibCrypto.modulemap";
+				PRODUCT_MODULE_NAME = WalletLibCrypto;
+				PRODUCT_NAME = WalletLibCrypto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5848D79844430B157C41E0304327D834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB5ED0E8EE9B1B012872C01A2B95EAB9 /* WalletLibCrypto.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WalletLibCrypto/WalletLibCrypto-prefix.pch";
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				INFOPLIST_FILE = "Target Support Files/WalletLibCrypto/WalletLibCrypto-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WalletLibCrypto/WalletLibCrypto.modulemap";
+				PRODUCT_MODULE_NAME = WalletLibCrypto;
+				PRODUCT_NAME = WalletLibCrypto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		5A9390DF41DC782BABCE6C6E187EACEB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1429,20 +1437,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C774D65A7C2ABE8E9DA2FAC07728589 /* Build configuration list for PBXNativeTarget "WalletLibCrypto" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0B2FE5108A91255ECABA6F7259A55EAD /* Debug */,
-				31D120FB3EEEC47FF6D07E3053AE0D00 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4FF6A0D1970CA9705974E3CB2134802 /* Debug */,
 				30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EE575C41752A555A0CC868BE3731F6E /* Build configuration list for PBXNativeTarget "WalletLibCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAB220D228BFC3B20C55A6CF3A4A0B5 /* Debug */,
+				5848D79844430B157C41E0304327D834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
